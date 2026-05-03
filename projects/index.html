@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects — HDS.SYS</title>
   <link rel="stylesheet" href="..\style.css" />
+  <script src="..\theme_toggle.js" defer></script>
+  <script src="load_projects.js"></script>
   <style>
     .page-wrap {
       max-width: 1280px;
@@ -100,59 +102,7 @@
   <div class="page-wrap">
     <p class="section-label fade-up">[01_PROJECTS]</p>
 
-    <div class="projects-grid">
-
-      <!-- Project 1 -->
-      <a href="Bulacan_State_University_E-Library_Management_System\" class="project-card fade-up fade-up-d1">
-        <div class="proj-thumb">
-          <img
-            src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80"
-            alt="BulSU Multi-Level E-Library System"
-            onerror="this.style.background='linear-gradient(135deg,#0f1f3d,#0d1526)'; this.style.display='block';"
-          />
-        </div>
-        <div class="project-body">
-          <h2 class="project-title">BulSU Multi-Level E-Library System</h2>
-          <p class="project-desc">A Database Design and GUI Application for Bulacan State University featuring multi-level access, borrowing, and reservation capabilities.</p>
-          <ul class="bullet-list project-bullets">
-            <li>Designed a full-scale Library Management Application using Java Swing and SQL Server</li>
-            <li>Implemented a reservation system for function halls</li>
-            <li>Established a book and patron management system</li>
-          </ul>
-          <div class="project-tags">
-            <span class="tag">Java Swing</span>
-            <span class="tag">SQL Server</span>
-            <span class="tag">Database Design</span>
-          </div>
-        </div>
-      </a>
-
-      <!-- Project 2 -->
-      <a href="Scholarship_Management_System\" class="project-card fade-up fade-up-d2">
-        <div class="proj-thumb">
-          <img
-            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80"
-            alt="Scholarship Management System"
-            onerror="this.style.background='linear-gradient(135deg,#0d1a2e,#131a2b)'; this.style.display='block';"
-          />
-        </div>
-        <div class="project-body">
-          <h2 class="project-title">Scholarship Management System</h2>
-          <p class="project-desc">An interactive web-based system for managing scholarships with separate admin and student views.</p>
-          <ul class="bullet-list project-bullets">
-            <li>Used MySQL, PHP, jQuery to establish an interactive website</li>
-            <li>Collaborated with multidisciplinary team to create admin and student views</li>
-          </ul>
-          <div class="project-tags">
-            <span class="tag">MySQL</span>
-            <span class="tag">PHP</span>
-            <span class="tag">jQuery</span>
-            <span class="tag">Web Development</span>
-          </div>
-        </div>
-      </a>
-
-    </div>
+    <div class="projects-grid" id="projectsGrid"></div>
   </div>
 </main>
 

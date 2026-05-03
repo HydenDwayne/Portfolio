@@ -1,0 +1,25 @@
+[
+  {
+    "title": "BulSU Multi-Level E-Library System",
+    "description": "A Database Design and GUI Application for Bulacan State University featuring multi-level access, borrowing, and reservation capabilities.",
+    "image": "Bulacan_State_University_E-Library_Management_System/Dashboard.png",
+    "link": "Bulacan_State_University_E-Library_Management_System/",
+    "bullets": [
+      "Designed a full-scale Library Management Application using Java Swing and SQL Server",
+      "Implemented a reservation system for function halls",
+      "Established a book and patron management system"
+    ],
+    "tags": ["Java Swing", "SQL Server", "Database Design"]
+  },
+  {
+    "title": "Scholarship Management System",
+    "description": "An interactive web-based system for managing scholarships with separate admin and student views.",
+    "image": "Scholarship_Management_System/Manage_Applications.png",
+    "link": "Scholarship_Management_System/",
+    "bullets": [
+      "Used MySQL, PHP, jQuery to establish an interactive website",
+      "Collaborated with multidisciplinary team to create admin and student views"
+    ],
+    "tags": ["MySQL", "PHP", "jQuery", "Web Development"]
+  }
+]

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — HDS.SYS</title>
+  <link rel="stylesheet" href="..\style.css" />
+  <script src="..\theme_toggle.js" defer></script>
+  <style>
+    .page-wrap {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 72px 40px 80px;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .about-bio {
+      font-size: 15px;
+      color: var(--text2);
+      line-height: 1.8;
+      margin-bottom: 40px;
+    }
+
+    /* Education */
+    .subsection-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+    .subsection-title svg { color: var(--blue); }
+
+    .edu-card {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-bottom: 32px;
+    }
+    .edu-card h3 { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+    .edu-card .school { font-size: 13px; color: var(--text2); margin-bottom: 8px; }
+    .edu-card .meta { display: flex; gap: 16px; font-size: 12px; color: var(--text3); }
+
+    /* Languages */
+    .lang-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .lang-tag {
+      padding: 6px 14px;
+      border: 1px solid var(--border2);
+      border-radius: 6px;
+      font-size: 13px;
+      color: var(--text2);
+      background: var(--bg4);
+    }
+    .lang-tag strong { color: var(--text); }
+
+    /* Photo */
+    .about-photo {
+      position: sticky;
+      top: calc(var(--nav-h) + 24px);
+    }
+    .about-photo img {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      object-fit: cover;
+      aspect-ratio: 3/4;
+      background: var(--bg3);
+    }
+    .photo-caption {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--text3);
+      text-align: right;
+      margin-top: 10px;
+    }
+
+    /* Placeholder photo gradient */
+    .photo-placeholder {
+      width: 100%;
+      aspect-ratio: 3/4;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: linear-gradient(135deg, #141c2c 0%, #0d0d0d 60%, #111827 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text3);
+      font-size: 13px;
+      font-family: var(--mono);
+      overflow: hidden;
+      position: relative;
+    }
+    .photo-placeholder::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url('pic.jpg') center/cover;
+      opacity: .8;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="..\" class="nav-logo"><span class="blue">HDS</span>.SYS</a>
+  <ul class="nav-links">
+    <li><a href="..\about\">About</a></li>
+    <li><a href="..\projects\">Projects</a></li>
+    <li><a href="..\skills\">Skills</a></li>
+    <li><a href="..\leadership\">Leadership</a></li>
+    <li><a href="..\contact\">Contact</a></li>
+  </ul>
+  <button class="nav-theme" title="Toggle theme">✳</button>
+</nav>
+
+<main>
+  <div class="page-wrap">
+    <p class="section-label fade-up">[00_ABOUT]</p>
+
+    <div class="about-grid">
+      <div class="fade-up fade-up-d1">
+        <p class="about-bio">
+          A Web Developer and IT student at Bulacan State University, specializing in Web and Mobile Application Development. I offer administrative, technical, and creative skills — from PHP and JavaScript development to video editing and social media management.
+        </p>
+
+        <!-- Education -->
+        <div class="subsection-title">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          Education
+        </div>
+        <div class="edu-card">
+          <h3>Bachelor of Science in Information Technology</h3>
+          <p class="school">Bulacan State University</p>
+          <div class="meta">
+            <span>Tertiarty Education</span>
+            <span>Web and Mobile Application Development</span>
+            <span>Expected 2028</span>
+          </div>
+        </div>
+        <div class="edu-card">
+          <h3>Technical Vocational Livehood - Information and Communications Technology</h3>
+          <p class="school">St. Joseph School of Baliuag Inc.</p>
+          <div class="meta">
+            <span>High School</span>
+            
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="subsection-title">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          Languages
+        </div>
+        <div class="lang-tags">
+          <span class="lang-tag"><strong>English</strong> — Fluent</span>
+          <span class="lang-tag"><strong>Mandarin</strong> — HSK Level 1 Certified</span>
+          <span class="lang-tag"><strong>Filipino</strong> — Native</span>
+        </div>
+      </div>
+
+      <!-- Photo -->
+      <div class="about-photo fade-up fade-up-d2">
+        <div class="photo-placeholder"></div>
+        <p class="photo-caption">© Baliwag, Bulacan, Philippines</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <span>© 2026 <span class="blue">Hyden Dwayne Sapasap</span></span>
+  <span>Built with precision and purpose.</span>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+{
+  "title": "BulSU Multi-Level E-Library System",
+  "description": "A Database Design and GUI Application for Bulacan State University featuring multi-level access, borrowing, and reservation capabilities. Built using Java Swing with an SQL Server backend.",
+  "image": "Dashboard.png",
+  "tags": ["Java Swing", "SQL Server", "Database Design", "GUI Application"],
+  "overview": "The BulSU Multi-Level E-Library System is a full-featured desktop application designed to modernize the library experience at Bulacan State University. The system supports multiple user roles including administrators, librarians, faculty, and students — each with tailored access levels and capabilities.",
+  "features": [
+    "Designed a full-scale Library Management Application using Java Swing and SQL Server",
+    "Implemented a reservation system for function halls with scheduling and conflict detection",
+    "Established a comprehensive book and patron management system",
+    "Multi-level access control: Admin, Librarian, Faculty, Student roles",
+    "Borrowing and return tracking with overdue notifications",
+    "Real-time search and filter across the entire catalog"
+  ],
+  "technical": "The application was architected using a three-tier approach — GUI layer in Java Swing, business logic in plain Java, and data persistence via JDBC connected to SQL Server. Entity-relationship diagrams were created prior to implementation to ensure a normalized and scalable database schema.",
+  "gallery": [
+    "Registration.png",
+    "IMS.png",
+    "Books.png",
+    "Registration.png",
+    "Login.png"
+  ],
+  "meta": {
+    "type": "Academic Project",
+    "year": "2025",
+    "platform": "Desktop",
+    "language": "Java",
+    "database": "SQL Server",
+    "status": "Completed"
+  },
+  "otherProjects": [
+  {
+    "title": "Scholarship Management System",
+    "description": "MySQL · PHP · jQuery",
+    "image": "../Scholarship_Management_System/Manage_Applications.png",
+    "link": "../Scholarship_Management_System"
+  }
+]
+}

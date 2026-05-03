@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — HDS.SYS</title>
+  <link rel="stylesheet" href="..\style.css" />
+  <script src="..\theme_toggle.js" defer></script>
+  <script src="load_projects.js"></script>
+  <style>
+    .page-wrap {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 72px 40px 80px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+    }
+
+    .project-card {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: border-color .25s, transform .2s, box-shadow .25s;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .project-card:hover {
+      border-color: var(--blue);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(0,0,0,.45);
+    }
+
+    .project-img {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      display: block;
+      background: var(--bg4);
+    }
+
+    /* AI-generated gradient placeholders */
+    .proj-thumb {
+      width: 100%;
+      aspect-ratio: 16/9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .proj-thumb img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .4s ease;
+    }
+    .project-card:hover .proj-thumb img { transform: scale(1.04); }
+
+    .project-body { padding: 24px; }
+
+    .project-title {
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    .project-desc {
+      font-size: 13px;
+      color: var(--text2);
+      line-height: 1.65;
+      margin-bottom: 16px;
+    }
+
+    .project-bullets { margin-bottom: 18px; }
+
+    .project-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="..\" class="nav-logo"><span class="blue">HDS</span>.SYS</a>
+  <ul class="nav-links">
+    <li><a href="..\about\">About</a></li>
+    <li><a href="..\projects\">Projects</a></li>
+    <li><a href="..\skills\">Skills</a></li>
+    <li><a href="..\leadership\">Leadership</a></li>
+    <li><a href="..\contact\">Contact</a></li>
+  </ul>
+  <button class="nav-theme" title="Toggle theme">✳</button>
+</nav>
+
+<main>
+  <div class="page-wrap">
+    <p class="section-label fade-up">[01_PROJECTS]</p>
+
+    <div class="projects-grid" id="projectsGrid"></div>
+  </div>
+</main>
+
+<footer>
+  <span>© 2026 <span class="blue">Hyden Dwayne Sapasap</span></span>
+  <span>Built with precision and purpose.</span>
+</footer>
+
+</body>
+</html>

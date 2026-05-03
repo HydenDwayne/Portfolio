@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — HDS.SYS</title>
+  <link rel="stylesheet" href="..\style.css" />
+  <script src="..\theme_toggle.js" defer></script>
+  <style>
+    .page-wrap {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 72px 40px 80px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    /* Left */
+    .contact-headline {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+
+    .contact-headline strong {
+      color: var(--blue);
+    }
+
+    .contact-sub {
+      font-size: 14px;
+      color: var(--text2);
+      line-height: 1.7;
+      max-width: 380px;
+      margin-bottom: 32px;
+    }
+
+    .contact-info-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .contact-info-card {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      transition: border-color .2s;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .contact-info-card:hover {
+      border-color: var(--border2);
+    }
+
+    .info-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: var(--bg4);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--blue);
+    }
+
+    .info-label {
+      font-size: 11px;
+      color: var(--text3);
+      margin-bottom: 2px;
+    }
+
+    .info-value {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .social-links {
+      display: flex;
+      gap: 10px;
+    }
+
+    .social-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 9px;
+      border: 1px solid var(--border2);
+      background: var(--bg3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text2);
+      transition: border-color .2s, color .2s;
+      cursor: pointer;
+    }
+
+    .social-btn:hover {
+      border-color: var(--blue);
+      color: var(--blue);
+    }
+
+    /* Right — form */
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .form-field label {
+      font-size: 11px;
+      font-family: var(--mono);
+      color: var(--text3);
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .form-field input,
+    .form-field textarea {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 16px;
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 14px;
+      outline: none;
+      transition: border-color .2s;
+      resize: none;
+    }
+
+    .form-field input::placeholder,
+    .form-field textarea::placeholder {
+      color: var(--text3);
+    }
+
+    .form-field input:focus,
+    .form-field textarea:focus {
+      border-color: var(--blue);
+    }
+
+    .form-field textarea {
+      min-height: 130px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 13px;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: background .2s;
+    }
+
+    .submit-btn:hover {
+      background: var(--blue-dim);
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="..\" class="nav-logo"><span class="blue">HDS</span>.SYS</a>
+    <ul class="nav-links">
+      <li><a href="..\about\">About</a></li>
+      <li><a href="..\projects\">Projects</a></li>
+      <li><a href="..\skills\">Skills</a></li>
+      <li><a href="..\leadership\">Leadership</a></li>
+      <li><a href="..\contact\">Contact</a></li>
+    </ul>
+    <button class="nav-theme" title="Toggle theme">✳</button>
+  </nav>
+
+  <main>
+    <div class="page-wrap">
+      <p class="section-label fade-up">[06_CONTACT]</p>
+
+      <div class="contact-grid">
+
+        <!-- Left -->
+        <div class="fade-up fade-up-d1">
+          <h2 class="contact-headline">Let's <strong>connect</strong></h2>
+          <p class="contact-sub">I'm open to new opportunities, collaborations, and interesting conversations. Feel free
+            to reach out!</p>
+
+          <div class="contact-info-cards">
+            <a href="mailto:hydendwayne1014@gmail.com" class="contact-info-card">
+              <div class="info-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+              </div>
+              <div>
+                <p class="info-label">Email</p>
+                <p class="info-value">hydendwayne1014@gmail.com</p>
+              </div>
+            </a>
+
+            <div class="contact-info-card">
+              <div class="info-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.05 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z" />
+                </svg>
+              </div>
+              <div>
+                <p class="info-label">Phone | Whatsapp | Viber | Telegram</p>
+                <p class="info-value">(+63) 922 595 8777</p>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="info-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div>
+                <p class="info-label">Location</p>
+                <p class="info-value">Baliwag, Bulacan, Philippines</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/HydenDwayne" target="_blank" class="social-btn" title="GitHub">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+              </svg>
+            </a>
+            <a href="https://www.onlinejobs.ph/jobseekers/info/4944523" target="_blank" class="social-btn"
+              title="LinkedIn">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <!-- simplified briefcase -->
+                <rect x="4" y="7" width="16" height="12" rx="2"></rect>
+                <path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"></path>
+
+                <!-- subtle globe line (freelance/work online hint) -->
+                <path d="M4 13h16"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div class="fade-up fade-up-d2">
+          <form class="contact-form" action="https://formspree.io/f/mojrjypv" method="POST">
+            <div class="form-field">
+              <label>Name</label>
+              <input type="text" name="name" placeholder="Your name" required />
+            </div>
+
+            <div class="form-field">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="your@email.com" required />
+            </div>
+
+            <div class="form-field">
+              <label>Message</label>
+              <textarea name="message" placeholder="Tell me about your project or opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+              Send Message
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <span>© 2026 <span class="blue">Hyden Dwayne Sapasap</span></span>
+    <span>Built with precision and purpose.</span>
+  </footer>
+
+  <script>
+    function handleSend(btn) {
+      btn.textContent = 'Message Sent ✓';
+      btn.style.background = '#16a34a';
+      setTimeout(() => {
+        btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Send Message';
+        btn.style.background = '';
+      }, 3000);
+    }
+  </script>
+</body>
+
+</html>

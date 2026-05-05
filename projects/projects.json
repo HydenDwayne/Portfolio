@@ -21,5 +21,66 @@
       "Collaborated with multidisciplinary team to create admin and student views"
     ],
     "tags": ["MySQL", "PHP", "jQuery", "Web Development"]
+  },
+  {
+    "title": "Karmamaster – Reddit Marketing Tool",
+    "description": "A conversion-optimized marketing website for a Reddit-focused growth agency, showcasing services, real campaign results, and SEO-driven messaging.",
+    "image": "KarmaMaster_Reddit_Marketing_Tool/Hero.png",
+    "link": "KarmaMaster_Reddit_Marketing_Tool/",
+    "bullets": [
+      "Used HTML, CSS, and JavaScript to create an interactive website",
+      "Uses genuine Reddit users to establish credibility and trust with potential clients"
+    ],
+    "tags": ["HTML", "CSS", "JavaScript", "Web Development"]
+  },
+  {
+    "title": "Puni’t Habi: Woven Hope of a Dying Art",
+    "description": "A full-length documentary film that explores the slow disappearance and determined preservation of Puni, a traditional leaf-folding art from Malolos, Bulacan. Edited using DaVinci Resolve in collaboration with multiple members, the film documents the people, process, struggles, and hopes tied to keeping Puni alive.",
+    "image": "Puni't_Habi_A_Woven_Hope_Of_A_Dying_Art/1.png",
+    "link": "Puni't_Habi_A_Woven_Hope_Of_A_Dying_Art/",
+    "bullets": [
+      "Edited a full-length documentary film using DaVinci Resolve, collaborating with multiple members to document the preservation of Puni, a traditional leaf-folding art from Malolos, Bulacan."
+    ],
+    "tags": ["DaVinci Resolve", "Documentary", "Video Editing", " Storytelling"]
+  },
+  {
+    "title": "Design and Implementation of a Small Enterprise Network using Cisco Packet Tracer",
+    "description": "A comprehensive Networking II final project that simulates the design and implementation of a small enterprise network for a college environment using VLANs, routing protocols, subnetting, and essential network services.",
+    "image": "Design_and_Implementation_of_a_Small_Enterprise_Network/Layout.png",
+    "link": "Design_and_Implementation_of_a_Small_Enterprise_Network/",
+    "bullets": [
+      "Designed and implemented a small enterprise network using Cisco Packet Tracer, incorporating VLANs, routing protocols, and subnetting."
+    ],
+    "tags": ["Cisco Packet Tracer", "Networking", "VLANs", "Routing Protocols", "Subnetting", "Network Services"]
+  },
+  {
+    "title": "Smart Security Audit Report – Vulnerability Assessment",
+    "description": "A comprehensive security assessment project focused on identifying, analyzing, and reporting vulnerabilities across a multi-component system, including source code, configuration files, and deployment practices. The project highlights insecure patterns, improper data handling, and configuration weaknesses through structured reporting.",
+    "image": "Smart_Security_Audit_Report_Vulnerability_Assessment/Dashboard.png",
+    "link": "Smart_Security_Audit_Report_Vulnerability_Assessment/",
+    "bullets": [
+      "Identified and documented security vulnerabilities in a multi-component system through static code analysis."
+    ],
+    "tags": ["Cybersecurity", "Vulnerability Assessment", "Secure Coding", "Static Analysis", "Java"]
+  },
+  {
+    "title": "BSIT 2A-G2 Facebook Page Management",
+    "description": "Ongoing management and moderation of the BSIT 2A-G2 Facebook page, serving as a centralized digital space for announcements, coordination, documentation, and community engagement among students.",
+    "image": "Facebook_Page_Management_of_College_Section/image.png",
+    "link": "Facebook_Page_Management_of_College_Section/",
+    "bullets": [
+      "Managed the BSIT 2A-G2 Facebook page, facilitating communication, coordination, and community engagement among students."
+    ],
+    "tags": ["Social Media Management", "Community Engagement", "Digital Communication", "Meta Business Suite"]
+  },
+  {
+    "title": "Facebook Page Content Management for Rustic Rentals - Naga",
+    "description": "Management and moderation of the Facebook page for Rustic Rentals in Naga, serving as a centralized digital space for announcements, coordination, documentation, and community engagement.",
+    "image": "Facebook_Page_Content_Management_Rustic_Rentals_Naga/image.png",
+    "link": "Facebook_Page_Content_Management_Rustic_Rentals_Naga/",
+    "bullets": [
+      "Managed the Facebook page for Rustic Rentals in Naga, facilitating communication, coordination, and community engagement among customers."
+    ],
+    "tags": ["Social Media Management", "Community Engagement", "Digital Communication", "Meta Business Suite"]
   }
 ]

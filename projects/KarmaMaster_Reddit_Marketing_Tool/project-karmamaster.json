@@ -1,0 +1,37 @@
+{
+  "title": "KarmaMaster – Reddit Marketing Agency Website",
+  "description": "A conversion-optimized marketing website for a Reddit-focused growth agency, showcasing services, real campaign results, and SEO-driven messaging.",
+  "image": "KarmaMaster/KarmaMaster_Hero.png",
+  "tags": ["Marketing Website", "Reddit Marketing", "SEO", "UI/UX"],
+  "overview": "The KarmaMaster website positions the brand as a Reddit marketing authority by educating users, highlighting pain points, and showcasing real performance data.",
+  "features": [
+    "Service breakdown for organic campaigns, monitoring, and SEO",
+    "Real campaign results including reach, engagement, and upvote ratios",
+    "Problem–solution storytelling tailored to Reddit marketing challenges",
+    "Clear calls-to-action optimized for conversions"
+  ],
+  "technical": "The site uses a modular section-based layout focused on clarity, SEO-friendly headings, and metric-driven credibility. Components are structured to allow future expansion of case studies and content.",
+  "gallery": [
+    "KarmaMaster/Services.png",
+    "KarmaMaster/Recent_Work.png",
+    "KarmaMaster/Why_Reddit.png",
+    "KarmaMaster/Problems.png",
+    "KarmaMaster/Solution.png"
+  ],
+  "meta": {
+    "type": "Personal Project",
+    "year": "2026",
+    "platform": "Web",
+    "language": "HTML / CSS / JavaScript",
+    "database": "N/A",
+    "status": "In Development"
+  },
+  "otherProjects": [
+    {
+      "title": "Scholarship Management System",
+      "description": "PHP · MySQL · jQuery",
+      "image": "../Scholarship_Management_System/Manage_Applications.png",
+      "link": "../Scholarship_Management_System"
+    }
+  ]
+}

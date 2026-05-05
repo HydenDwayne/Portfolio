@@ -1,0 +1,35 @@
+{
+  "title": "Facebook Page Content Management for Rustic Rentals - Naga",
+  "description": "Ongoing management of a Facebook page focused on content scheduling, caption writing, and organization of publication materials to ensure consistent, clear, and timely online presence.",
+  "image": "image.png",
+  "tags": ["Social Media Management", "Content Scheduling", "Caption Writing", "Digital Organization", "Meta Business Suite"],
+  "overview": "This work centers on the day-to-day management of a Facebook page, with emphasis on planning and scheduling posts, crafting clear and appropriate captions, and organizing publication-ready materials. The role supports consistent information delivery, improves audience clarity, and ensures that posts follow a cohesive structure and timeline rather than being published randomly.",
+  "features": [
+    "Scheduling posts in advance to maintain consistent publishing timelines",
+    "Writing and refining captions to ensure clarity, tone alignment, and accuracy",
+    "Organizing photos, posters, and other publication materials before posting",
+    "Coordinating content order and timing to avoid information overlap",
+    "Ensuring posts are formatted properly for readability and engagement",
+    "Maintaining a clean and organized page feed through structured posting"
+  ],
+  "technical": "The page is managed using Facebook’s native tools for post scheduling and page administration. Content preparation involves basic copywriting, asset organization, and timing strategy to ensure that materials are published cohesively. The workflow prioritizes accuracy, clarity, and consistency while adhering to responsible and organized digital communication practices.",
+  "gallery": [
+    "image.png"
+  ],
+  "meta": {
+    "type": "Social Media Management",
+    "year": "2025–2026",
+    "platform": "Facebook",
+    "language": "English / Filipino",
+    "database": "N/A",
+    "status": "Completed"
+  },
+  "otherProjects": [
+    {
+      "title": "BSIT 2A-G2 Facebook Page Management",
+      "description": "Community Coordination · Content Moderation",
+      "image": "../BSIT_2A_G2/BSIT_2A_G2_Facebook_Page.png",
+      "link": "../BSIT_2A_G2"
+    }
+  ]
+}

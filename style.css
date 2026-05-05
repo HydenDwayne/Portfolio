@@ -17,6 +17,7 @@
   --blue:      #4d8ef0;
   --blue-dim:  #2563c4;
   --green:     #4ade80;
+  --yellow:     #eab308;
   --mono:      'JetBrains Mono', monospace;
   --sans:      'Inter', sans-serif;
   --nav-h:     56px;
@@ -261,6 +262,11 @@ footer span.blue { color: var(--blue); }
 .fade-up-d3 { animation-delay: .3s; }
 .fade-up-d4 { animation-delay: .4s; }
 .fade-up-d5 { animation-delay: .5s; }
+.fade-up-d6 { animation-delay: .6s; }
+.fade-up-d7 { animation-delay: .7s; }
+.fade-up-d8 { animation-delay: .8s; }
+.fade-up-d9 { animation-delay: .9s; }
+.fade-up-d10 { animation-delay: 10s; }
 
 /* ── SCROLLBAR ── */
 ::-webkit-scrollbar { width: 6px; }

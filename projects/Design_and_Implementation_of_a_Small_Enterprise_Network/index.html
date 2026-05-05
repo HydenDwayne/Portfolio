@@ -98,6 +98,7 @@
         document.getElementById("language").textContent = data.meta.language;
         document.getElementById("database").textContent = data.meta.database;
         document.getElementById("status").textContent = data.meta.status;
+        document.getElementById("link").href = data.meta.link;
 
         document.getElementById("otherProjects").innerHTML =
           data.otherProjects.map(p => `
@@ -172,6 +173,10 @@
           <div class="meta-item"><span class="label">Language</span><span class="value" id="language"></span></div>
           <div class="meta-item"><span class="label">Database</span><span class="value" id="database"></span></div>
           <div class="meta-item"><span class="label">Status</span><span class="value" id="status" style="color:var(--green)"></span></div>
+          <div class="meta-item">
+            <span class="label">Link</span>
+            <a href="#" target="_blank" style="color:var(--blue)" class="value" id="link">🔗 </a>
+          </div>
         </div>
 
         <div>

@@ -26,14 +26,27 @@
     "platform": "Film",
     "language": "Filipino / English",
     "database": "N/A",
-    "status": "Completed"
+    "status": "Completed",
+    "link": "https://www.facebook.com/share/v/1EARuuU5MT/"
   },
   "otherProjects": [
     {
-      "title": "Scholarship Management System",
-      "description": "PHP · MySQL · jQuery",
-      "image": "../Scholarship_Management_System/Manage_Applications.png",
-      "link": "../Scholarship_Management_System"
+      "title": "Facebook Page Management of College Section",
+      "description": "Social Media Management · Content Creation",
+      "image": "../Facebook_Page_Management_of_College_Section/image.png",
+      "link": "../Facebook_Page_Management_of_College_Section"
+    },
+    {
+      "title": "Facebook Page Content Management for Rustic Rentals - Naga",
+      "description": "Social Media Management · Content Scheduling",
+      "image": "../Facebook_Page_Content_Management_Rustic_Rentals_Naga/image.png",
+      "link": "../Facebook_Page_Content_Management_Rustic_Rentals_Naga"
+    },
+    {
+      "title": "Design and Implementation of a Small Enterprise Network",
+      "description": "Networking · VLAN · OSPF · Cisco IOS",
+      "image": "../Design_and_Implementation_of_a_Small_Enterprise_Network/Layout.png",
+      "link": "../Design_and_Implementation_of_a_Small_Enterprise_Network"
     }
   ]
 }

@@ -18,18 +18,31 @@
   ],
   "meta": {
     "type": "Social Media Management",
-    "year": "2025–2026",
+    "year": "2025",
     "platform": "Facebook",
     "language": "English / Filipino",
     "database": "N/A",
-    "status": "Completed"
+    "status": "Completed",
+    "link": "https://www.facebook.com/profile.php?id=100066840185389"
   },
   "otherProjects": [
     {
       "title": "BSIT 2A-G2 Facebook Page Management",
-      "description": "Community Coordination · Content Moderation",
-      "image": "../BSIT_2A_G2/BSIT_2A_G2_Facebook_Page.png",
-      "link": "../BSIT_2A_G2"
+      "description": "Social Media Management · Community Management",
+      "image": "../Facebook_Page_Management_of_College_Section/image.png",
+      "link": "../Facebook_Page_Management_of_College_Section"
+    },
+    {
+      "title": "PUNI’T HABI: Woven Hope of a Dying Art",
+      "description": "Documentary Film · Cultural Heritage",
+      "image": "../Puni%27t_Habi_A_Woven_Hope_Of_A_Dying_Art/1.png",
+      "link": "../Puni%27t_Habi_A_Woven_Hope_Of_A_Dying_Art"
+    },
+    {
+      "title": "Design and Implementation of a Small Enterprise Network",
+      "description": "Networking · VLAN · OSPF · Cisco IOS",
+      "image": "../Design_and_Implementation_of_a_Small_Enterprise_Network/Layout.png",
+      "link": "../Design_and_Implementation_of_a_Small_Enterprise_Network"
     }
   ]
 }

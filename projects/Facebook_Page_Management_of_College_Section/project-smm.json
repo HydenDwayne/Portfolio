@@ -25,14 +25,27 @@
     "platform": "Facebook",
     "language": "English / Filipino",
     "database": "N/A",
-    "status": "Active"
+    "status": "Active",
+    "link": "https://www.facebook.com/bsit2ag2bulsu"
   },
   "otherProjects": [
     {
       "title": "Design and Implementation of a Small Enterprise Network",
       "description": "VLAN · OSPF · Cisco IOS",
-      "image": "../Enterprise_Network/Enterprise_Network_Topology.png",
-      "link": "../Enterprise_Network"
+      "image": "../Design_and_Implementation_of_a_Small_Enterprise_Network/Layout.png",
+      "link": "../Design_and_Implementation_of_a_Small_Enterprise_Network"
+    },
+    {
+      "title": "Facebook Page Content Management for Rustic Rentals - Naga",
+      "description": "Social Media Management · Content Scheduling",
+      "image": "../Facebook_Page_Content_Management_Rustic_Rentals_Naga/image.png",
+      "link": "../Facebook_Page_Content_Management_Rustic_Rentals_Naga"
+    },
+    {
+      "title": "KarmaMaster Reddit Marketing Tool",
+      "description": "HTML · CSS · JavaScript",
+      "image": "../KarmaMaster_Reddit_Marketing_Tool/Hero.png",
+      "link": "../KarmaMaster_Reddit_Marketing_Tool"
     }
   ]
 }

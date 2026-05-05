@@ -26,14 +26,27 @@
     "platform": "Network Simulation",
     "language": "Cisco IOS",
     "database": "N/A",
-    "status": "Completed"
+    "status": "Completed",
+    "link": "https://docs.google.com/document/d/10iIFeMoNmaqIWv1NhJsVPBY16KPlqIfk87CCL45uzR8/edit?usp=sharing"
   },
   "otherProjects": [
     {
-      "title": "PUNI’T HABI: Woven Hope of a Dying Art",
+      "title": "Security Vulnerability Assessment and Reporting",
+      "description": "Cybersecurity · Vulnerability Assessment · Static Analysis",
+      "image": "../Smart_Security_Audit_Report_Vulnerability_Assessment/Dashboard.png",
+      "link": "../Smart_Security_Audit_Report_Vulnerability_Assessment"
+    },
+    {
+      "title": "Puni’t Habi: Woven Hope of a Dying Art",
       "description": "Documentary Film · DaVinci Resolve Pro",
-      "image": "../PUNIT_HABI/PUNIT_HABI_Title.png",
-      "link": "../PUNIT_HABI"
+      "image": "../Puni't_Habi_A_Woven_Hope_Of_A_Dying_Art/1.png",
+      "link": "../Puni't_Habi_A_Woven_Hope_Of_A_Dying_Art"
+    },
+    {
+      "title": "KarmaMaster – Reddit Marketing Tool",
+      "description": "Web Development · HTML · CSS · JavaScript",
+      "image": "../KarmaMaster_Reddit_Marketing_Tool/Hero.png",
+      "link": "../KarmaMaster_Reddit_Marketing_Tool"
     }
   ]
 }

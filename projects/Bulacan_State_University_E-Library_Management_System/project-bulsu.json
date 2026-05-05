@@ -26,7 +26,8 @@
     "platform": "Desktop",
     "language": "Java",
     "database": "SQL Server",
-    "status": "Completed"
+    "status": "Completed",
+    "link": "https://github.com/HydenDwayne/ELibrary"
   },
   "otherProjects": [
   {
@@ -34,6 +35,18 @@
     "description": "MySQL · PHP · jQuery",
     "image": "../Scholarship_Management_System/Manage_Applications.png",
     "link": "../Scholarship_Management_System"
+  },
+  {
+    "title": "Smart Security Audit Report – Vulnerability Assessment",
+    "description": "Cybersecurity · Static Analysis · Security Reporting",
+    "image": "../Smart_Security_Audit_Report_Vulnerability_Assessment/Dashboard.png",
+    "link": "../Smart_Security_Audit_Report_Vulnerability_Assessment"
+  },
+  {
+    "title": "KarmaMaster – Reddit Marketing Tool",
+    "description": "HTML · CSS · JavaScript",
+    "image": "../KarmaMaster_Reddit_Marketing_Tool/Hero.png",
+    "link": "../KarmaMaster_Reddit_Marketing_Tool"
   }
 ]
 }

@@ -1,7 +1,7 @@
 {
   "title": "KarmaMaster – Reddit Marketing Agency Website",
   "description": "A conversion-optimized marketing website for a Reddit-focused growth agency, showcasing services, real campaign results, and SEO-driven messaging.",
-  "image": "KarmaMaster/KarmaMaster_Hero.png",
+  "image": "Hero.png",
   "tags": ["Marketing Website", "Reddit Marketing", "SEO", "UI/UX"],
   "overview": "The KarmaMaster website positions the brand as a Reddit marketing authority by educating users, highlighting pain points, and showcasing real performance data.",
   "features": [
@@ -12,11 +12,12 @@
   ],
   "technical": "The site uses a modular section-based layout focused on clarity, SEO-friendly headings, and metric-driven credibility. Components are structured to allow future expansion of case studies and content.",
   "gallery": [
-    "KarmaMaster/Services.png",
-    "KarmaMaster/Recent_Work.png",
-    "KarmaMaster/Why_Reddit.png",
-    "KarmaMaster/Problems.png",
-    "KarmaMaster/Solution.png"
+    "Hero.png",
+    "Our_Services.png",
+    "Our_Solution.png",
+    "Real_Results.png",
+    "Why_Reddit.png",
+    "Your_Problems.png"
   ],
   "meta": {
     "type": "Personal Project",
@@ -24,7 +25,8 @@
     "platform": "Web",
     "language": "HTML / CSS / JavaScript",
     "database": "N/A",
-    "status": "In Development"
+    "status": "In Development",
+    "link": "https://karmamaster.base44.app"
   },
   "otherProjects": [
     {
@@ -32,6 +34,18 @@
       "description": "PHP · MySQL · jQuery",
       "image": "../Scholarship_Management_System/Manage_Applications.png",
       "link": "../Scholarship_Management_System"
+    },
+    {
+      "title": "BulSU E-Library System",
+      "description": "Java Swing · SQL Server",
+      "image": "../Bulacan_State_University_E-Library_Management_System/Dashboard.png",
+      "link": "../Bulacan_State_University_E-Library_Management_System"
+    },
+    {
+      "title": "Facebook Page Management of College Section",
+      "description": "Social Media Management · Content Creation",
+      "image": "../Facebook_Page_Management_of_College_Section/image.png",
+      "link": "../Facebook_Page_Management_of_College_Section"
     }
   ]
 }

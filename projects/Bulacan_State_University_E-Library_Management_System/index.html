@@ -252,6 +252,7 @@
         document.getElementById("language").textContent = data.meta.language;
         document.getElementById("database").textContent = data.meta.database;
         document.getElementById("status").textContent = data.meta.status;
+        document.getElementById("link").href = data.meta.link;
 
         // Other Projects
         const other = document.getElementById("otherProjects");
@@ -352,6 +353,10 @@
           <div class="meta-item">
             <span class="label">Status</span>
             <span class="value" style="color:var(--green)" id="status"></span>
+          </div>
+          <div class="meta-item">
+            <span class="label">Link</span>
+            <a href="#" target="_blank" style="color:var(--blue)" class="value" id="link">🔗 </a>
           </div>
         </div>
 

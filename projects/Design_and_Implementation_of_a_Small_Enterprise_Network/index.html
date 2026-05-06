@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- ── SEO ── -->
   <title>Design and Implementation of a Small Enterprise Network — Hyden Dwayne Sapasap Portfolio</title>
-  <meta name="description" content="A comprehensive Networking II final project that simulates the design and implementation of a small enterprise network for a college environment using VLANs, routing protocols, subnetting, and essential network services." />
+  <meta name="description"
+    content="A comprehensive Networking II final project that simulates the design and implementation of a small enterprise network for a college environment using VLANs, routing protocols, subnetting, and essential network services." />
   <meta name="author" content="Hyden Dwayne Sapasap" />
-  <meta name="keywords" content="Networking, VLAN, OSPF, Subnetting, Cisco, Enterprise Network, Hyden Dwayne Sapasap, portfolio" />
-  <link rel="canonical" href="https://hydendwayne.github.io/Portfolio/projects/Design_and_Implementation_of_a_Small_Enterprise_Network/" />
+  <meta name="keywords"
+    content="Networking, VLAN, OSPF, Subnetting, Cisco, Enterprise Network, Hyden Dwayne Sapasap, portfolio" />
+  <link rel="canonical"
+    href="https://hydendwayne.github.io/Portfolio/projects/Design_and_Implementation_of_a_Small_Enterprise_Network/" />
 
   <!-- ── Open Graph ── -->
-  <meta property="og:type"        content="article" />
-  <meta property="og:url"         content="https://hydendwayne.github.io/Portfolio/projects/Design_and_Implementation_of_a_Small_Enterprise_Network/" />
-  <meta property="og:title"       content="Design and Implementation of a Small Enterprise Network — Hyden Dwayne Sapasap" />
-  <meta property="og:description" content="A comprehensive Networking II final project that simulates the design and implementation of a small enterprise network for a college environment using VLANs, routing protocols, subnetting, and essential network services." />
-  <meta property="og:image"       content="https://hydendwayne.github.io/Portfolio/projects/Design_and_Implementation_of_a_Small_Enterprise_Network/Layout.png" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url"
+    content="https://hydendwayne.github.io/Portfolio/projects/Design_and_Implementation_of_a_Small_Enterprise_Network/" />
+  <meta property="og:title" content="Design and Implementation of a Small Enterprise Network — Hyden Dwayne Sapasap" />
+  <meta property="og:description"
+    content="A comprehensive Networking II final project that simulates the design and implementation of a small enterprise network for a college environment using VLANs, routing protocols, subnetting, and essential network services." />
+  <meta property="og:image"
+    content="https://hydendwayne.github.io/Portfolio/projects/Design_and_Implementation_of_a_Small_Enterprise_Network/Layout.png" />
 
   <!-- ── Twitter Card ── -->
-  <meta name="twitter:card"        content="summary_large_image" />
-  <meta name="twitter:title"       content="Design and Implementation of a Small Enterprise Network" />
-  <meta name="twitter:description" content="A comprehensive Networking II final project that simulates the design and implementation of a small enterprise network for a college environment using VLANs, routing protocols, subnetting, and essential network services." />
-  <meta name="twitter:image"       content="https://hydendwayne.github.io/Portfolio/projects/Design_and_Implementation_of_a_Small_Enterprise_Network/Layout.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Design and Implementation of a Small Enterprise Network" />
+  <meta name="twitter:description"
+    content="A comprehensive Networking II final project that simulates the design and implementation of a small enterprise network for a college environment using VLANs, routing protocols, subnetting, and essential network services." />
+  <meta name="twitter:image"
+    content="https://hydendwayne.github.io/Portfolio/projects/Design_and_Implementation_of_a_Small_Enterprise_Network/Layout.png" />
 
   <!-- ── Structured Data ── -->
   <script type="application/ld+json">
@@ -72,7 +81,8 @@
   </script>
 
   <!-- ── Favicon ── -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='28'>💻</text></svg>" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='28'>💻</text></svg>" />
 
   <link rel="stylesheet" href="../../style.css" />
   <script src="../../theme_toggle.js" defer></script>
@@ -83,6 +93,7 @@
       margin: 0 auto;
       padding: 72px 40px 80px;
     }
+
     .back-link {
       display: inline-flex;
       align-items: center;
@@ -92,7 +103,11 @@
       margin-bottom: 36px;
       transition: color .2s;
     }
-    .back-link:hover { color: var(--blue); }
+
+    .back-link:hover {
+      color: var(--blue);
+    }
+
     .project-hero-img {
       width: 100%;
       aspect-ratio: 16 / 9;
@@ -103,31 +118,186 @@
       background: linear-gradient(135deg, #0f1f3d, #0d1526);
       display: block;
     }
-    .project-header { margin-bottom: 36px; }
-    .project-header h1 { font-size: 32px; font-weight: 700; margin-bottom: 10px; }
-    .project-header p { font-size: 15px; color: var(--text2); max-width: 680px; line-height: 1.75; }
-    .proj-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
-    .project-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 48px; margin-top: 40px; }
-    .proj-section { margin-bottom: 36px; }
-    .proj-section h2 { font-size: 13px; font-family: var(--mono); color: var(--blue); letter-spacing: .08em; margin-bottom: 14px; }
-    .proj-section p { font-size: 14px; color: var(--text2); line-height: 1.75; }
-    .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 32px; }
-    .gallery-item { border-radius: 10px; overflow: hidden; border: 1px solid var(--border); aspect-ratio: 4/3; background: var(--bg3); position: relative; }
-    .gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .35s; }
-    .gallery-item:hover img { transform: scale(1.05); }
-    .proj-sidebar { position: sticky; top: calc(var(--nav-h) + 24px); }
-    .meta-card { background: var(--bg3); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 20px; }
-    .meta-card h3 { font-size: 11px; font-family: var(--mono); color: var(--text3); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 12px; }
-    .meta-item { display: flex; justify-content: space-between; font-size: 13px; padding: 8px 0; border-bottom: 1px solid var(--border); }
-    .meta-item:last-child { border-bottom: none; }
-    .meta-item .label { color: var(--text3); }
-    .meta-item .value { color: var(--text2); font-weight: 500; }
-    .other-projects h3 { font-size: 11px; font-family: var(--mono); color: var(--text3); letter-spacing: .08em; margin-bottom: 12px; }
-    .other-card { background: var(--bg3); border: 1px solid var(--border); border-radius: 10px; padding: 16px; display: flex; gap: 12px; align-items: center; transition: border-color .2s; text-decoration: none; color: inherit; margin-bottom: 10px; }
-    .other-card:hover { border-color: var(--blue); }
-    .other-thumb { width: 60px; height: 45px; border-radius: 6px; object-fit: cover; background: var(--bg4); flex-shrink: 0; }
-    .other-info h4 { font-size: 13px; font-weight: 600; margin-bottom: 3px; }
-    .other-info p { font-size: 11px; color: var(--text3); }
+
+    .project-header {
+      margin-bottom: 36px;
+    }
+
+    .project-header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .project-header p {
+      font-size: 15px;
+      color: var(--text2);
+      max-width: 680px;
+      line-height: 1.75;
+    }
+
+    .proj-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 48px;
+      margin-top: 40px;
+    }
+
+    .proj-section {
+      margin-bottom: 36px;
+    }
+
+    .proj-section h2 {
+      font-size: 13px;
+      font-family: var(--mono);
+      color: var(--blue);
+      letter-spacing: .08em;
+      margin-bottom: 14px;
+    }
+
+    .proj-section p {
+      font-size: 14px;
+      color: var(--text2);
+      line-height: 1.75;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 32px;
+    }
+
+    .gallery-item {
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      aspect-ratio: 4/3;
+      background: var(--bg3);
+      position: relative;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .35s;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .proj-sidebar {
+      position: sticky;
+      top: calc(var(--nav-h) + 24px);
+    }
+
+    .meta-card {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .meta-card h3 {
+      font-size: 11px;
+      font-family: var(--mono);
+      color: var(--text3);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .meta-item {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .meta-item:last-child {
+      border-bottom: none;
+    }
+
+    .meta-item .label {
+      color: var(--text3);
+    }
+
+    .meta-item .value {
+      color: var(--text2);
+      font-weight: 500;
+    }
+
+    .other-projects h3 {
+      font-size: 11px;
+      font-family: var(--mono);
+      color: var(--text3);
+      letter-spacing: .08em;
+      margin-bottom: 12px;
+    }
+
+    .other-projects-mobile {
+      display: none;
+
+    }
+
+    .other-projects-mobile h3 {
+      font-size: 11px;
+      font-family: var(--mono);
+      color: var(--text3);
+      letter-spacing: .08em;
+      margin-bottom: 12px;
+    }
+
+    .other-card {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      transition: border-color .2s;
+      text-decoration: none;
+      color: inherit;
+      margin-bottom: 10px;
+    }
+
+    .other-card:hover {
+      border-color: var(--blue);
+    }
+
+    .other-thumb {
+      width: 60px;
+      height: 45px;
+      border-radius: 6px;
+      object-fit: cover;
+      background: var(--bg4);
+      flex-shrink: 0;
+    }
+
+    .other-info h4 {
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
+
+    .other-info p {
+      font-size: 11px;
+      color: var(--text3);
+    }
+
     @media (max-width: 768px) {
       .project-grid {
         grid-template-columns: 1fr;
@@ -135,34 +305,51 @@
         display: flex;
         flex-direction: column;
       }
+
       /* On mobile: sidebar (aside) moves ABOVE main content */
       .proj-sidebar {
         position: static;
         order: -1;
       }
+
       /* On mobile: only show the meta-card (Project Info), hide Other Projects */
-      .other-projects { display: none; }
-      .gallery { grid-template-columns: 1fr; }
-      .page-wrap { padding: 48px 20px 60px; }
+      .other-projects {
+        display: none;
+      }
+
+      .other-projects-mobile {
+        display: block;
+        margin-top: 30px;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .page-wrap {
+        padding: 48px 20px 60px;
+      }
+
       /* Hero image: natural landscape, no aggressive crop */
       .project-hero-img {
         aspect-ratio: 16 / 9;
         height: auto;
       }
     }
-  
+
     /* ── Screenshot Lightbox Modal ── */
     .gallery-item {
       cursor: pointer;
     }
+
     .gallery-item::after {
       content: '⤢';
       position: absolute;
       top: 8px;
       right: 10px;
       font-size: 16px;
-      color: rgba(255,255,255,0.75);
-      background: rgba(0,0,0,0.45);
+      color: rgba(255, 255, 255, 0.75);
+      background: rgba(0, 0, 0, 0.45);
       border-radius: 4px;
       padding: 2px 6px;
       line-height: 1.4;
@@ -170,20 +357,26 @@
       transition: opacity .2s;
       pointer-events: none;
     }
-    .gallery-item:hover::after { opacity: 1; }
+
+    .gallery-item:hover::after {
+      opacity: 1;
+    }
 
     .img-modal-overlay {
       display: none;
       position: fixed;
       inset: 0;
-      background: rgba(0,0,0,0.92);
+      background: rgba(0, 0, 0, 0.92);
       z-index: 9999;
       align-items: center;
       justify-content: center;
       padding: 16px;
       isolation: isolate;
     }
-    .img-modal-overlay.open { display: flex; }
+
+    .img-modal-overlay.open {
+      display: flex;
+    }
 
     .img-modal-box {
       position: relative;
@@ -200,8 +393,8 @@
       max-height: calc(90vh - 60px);
       object-fit: contain;
       border-radius: 10px;
-      border: 1px solid rgba(255,255,255,0.1);
-      box-shadow: 0 32px 80px rgba(0,0,0,.8);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 32px 80px rgba(0, 0, 0, .8);
       display: block;
     }
 
@@ -209,8 +402,8 @@
       position: fixed;
       top: 16px;
       right: 20px;
-      background: rgba(255,255,255,0.1);
-      border: 1px solid rgba(255,255,255,0.15);
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.15);
       color: #fff;
       font-size: 20px;
       line-height: 1;
@@ -220,12 +413,15 @@
       transition: background .2s;
       z-index: 10000;
     }
-    .img-modal-close:hover { background: rgba(255,255,255,0.2); }
+
+    .img-modal-close:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
 
     .img-modal-caption {
       font-size: 12px;
       font-family: var(--mono);
-      color: rgba(255,255,255,0.45);
+      color: rgba(255, 255, 255, 0.45);
       text-align: center;
     }
 
@@ -235,8 +431,8 @@
       position: fixed;
       top: 50%;
       transform: translateY(-50%);
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.15);
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
       color: #fff;
       font-size: 22px;
       line-height: 1;
@@ -246,241 +442,311 @@
       transition: background .2s;
       z-index: 10000;
     }
-    .img-modal-prev { left: 12px; }
-    .img-modal-next { right: 12px; }
-    .img-modal-prev:hover,
-    .img-modal-next:hover { background: rgba(255,255,255,0.18); }
-    .img-modal-prev:disabled,
-    .img-modal-next:disabled { opacity: 0.2; cursor: default; }
 
+    .img-modal-prev {
+      left: 12px;
+    }
+
+    .img-modal-next {
+      right: 12px;
+    }
+
+    .img-modal-prev:hover,
+    .img-modal-next:hover {
+      background: rgba(255, 255, 255, 0.18);
+    }
+
+    .img-modal-prev:disabled,
+    .img-modal-next:disabled {
+      opacity: 0.2;
+      cursor: default;
+    }
   </style>
 </head>
+
 <body>
 
-<nav>
-  <a href="../../" class="nav-logo"><span class="blue">HDS</span>.SYS</a>
-  <ul class="nav-links">
-    <li><a href="../../about/">About</a></li>
-    <li><a href="../../projects/">Projects</a></li>
-    <li><a href="../../skills/">Skills</a></li>
-    <li><a href="../../leadership/">Leadership</a></li>
-    <li><a href="../../contact/">Contact</a></li>
-  </ul>
-  <div class="nav-right">
-    <button class="nav-theme" title="Toggle theme" aria-label="Toggle light/dark theme">☾</button>
-    <button class="nav-hamburger" title="Open menu" aria-label="Open navigation menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
-
-<nav class="nav-drawer" aria-label="Mobile navigation">
-  <a href="../../about/">About</a>
-  <a href="../../projects/">Projects</a>
-  <a href="../../skills/">Skills</a>
-  <a href="../../leadership/">Leadership</a>
-  <a href="../../contact/">Contact</a>
-</nav>
-
-<main>
-  <div class="page-wrap">
-    <a href="../" class="back-link fade-up">← Back to Projects</a>
-
-    <img
-      src="Layout.png"
-      alt="Design and Implementation of a Small Enterprise Network — project dashboard screenshot"
-      class="project-hero-img fade-up"
-      width="1100"
-      height="471"
-      loading="eager"
-    />
-
-    <div class="project-header fade-up fade-up-d1">
-      <h1>Design and Implementation of a Small Enterprise Network</h1>
-      <p>A comprehensive Networking II final project that simulates the design and implementation of a small enterprise network for a college environment using VLANs, routing protocols, subnetting, and essential network services.</p>
-      <div class="proj-tags" aria-label="Technologies used">
-        <span class="tag">Networking</span><span class="tag">VLAN</span><span class="tag">OSPF</span><span class="tag">Subnetting</span><span class="tag">Cisco</span><span class="tag">Enterprise Network</span>
-      </div>
+  <nav>
+    <a href="../../" class="nav-logo"><span class="blue">HDS</span>.SYS</a>
+    <ul class="nav-links">
+      <li><a href="../../about/">About</a></li>
+      <li><a href="../../projects/">Projects</a></li>
+      <li><a href="../../skills/">Skills</a></li>
+      <li><a href="../../leadership/">Leadership</a></li>
+      <li><a href="../../contact/">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="nav-theme" title="Toggle theme" aria-label="Toggle light/dark theme">☾</button>
+      <button class="nav-hamburger" title="Open menu" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+  </nav>
 
-    <div class="project-grid fade-up fade-up-d2">
-      <div class="proj-main">
-        <section class="proj-section" aria-labelledby="overview-heading">
-          <h2 id="overview-heading">[OVERVIEW]</h2>
-          <p>This project focuses on designing and implementing a secure and scalable enterprise network for the College of Information and Communications Technology (CICT). The simulated network supports three departments—Administration, Faculty, and Students—each isolated using VLANs while maintaining inter-department communication through routing. The project demonstrates practical applications of network design principles, routing protocols, and basic network security.</p>
-        </section>
+  <nav class="nav-drawer" aria-label="Mobile navigation">
+    <a href="../../about/">About</a>
+    <a href="../../projects/">Projects</a>
+    <a href="../../skills/">Skills</a>
+    <a href="../../leadership/">Leadership</a>
+    <a href="../../contact/">Contact</a>
+  </nav>
 
-        <section class="proj-section" aria-labelledby="features-heading">
-          <h2 id="features-heading">[KEY FEATURES]</h2>
-          <ul class="bullet-list">
-            <li>Departmental separation using VLANs for Administration, Faculty, and Students</li><li>Inter-VLAN communication using Router-on-a-Stick configuration</li><li>Dynamic routing implementation using OSPF across three routers</li><li>Automatic IP address allocation via centralized DHCP configuration</li><li>Deployment of DNS and Web services on a dedicated server network</li><li>Basic network security through port security, device passwords, and controlled access</li>
-          </ul>
-        </section>
+  <main>
+    <div class="page-wrap">
+      <a href="../" class="back-link fade-up">← Back to Projects</a>
 
-        <section class="proj-section" aria-labelledby="technical-heading">
-          <h2 id="technical-heading">[TECHNICAL DETAILS]</h2>
-          <p>The network was implemented using Cisco-based configurations with a focus on real-world enterprise practices. Layer 2 switches handle VLAN segmentation and trunking, while routers manage inter-VLAN routing and dynamic routing using OSPF. Subnetting was applied to efficiently allocate IP address ranges per department. Additional configurations include DHCP services, server setup for DNS and HTTP/HTTPS, port security on switches, and basic router and switch hardening.</p>
-        </section>
+      <img src="Layout.png" alt="Design and Implementation of a Small Enterprise Network — project dashboard screenshot"
+        class="project-hero-img fade-up" width="1100" height="471" loading="eager" />
 
-        <section aria-labelledby="screenshots-heading">
-          <h2 id="screenshots-heading" style="font-family:var(--mono);font-size:13px;color:var(--blue);letter-spacing:.08em;margin-bottom:12px">[SCREENSHOTS]</h2>
-          <div class="gallery">
-          <div class="gallery-item">
-            <img src="Access_to_Web_Servers.png" alt="Design and Implementation of a Small Enterprise Network — Access to Web Servers screenshot" loading="lazy" width="800" height="600" />
-          </div>
-          <div class="gallery-item">
-            <img src="VLAN_Isolation.png" alt="Design and Implementation of a Small Enterprise Network — VLAN Isolation screenshot" loading="lazy" width="800" height="600" />
-          </div>
-          <div class="gallery-item">
-            <img src="InterVLAN.png" alt="Design and Implementation of a Small Enterprise Network — InterVLAN screenshot" loading="lazy" width="800" height="600" />
-          </div>
-          <div class="gallery-item">
-            <img src="DHCP.png" alt="Design and Implementation of a Small Enterprise Network — DHCP screenshot" loading="lazy" width="800" height="600" />
-          </div>
-          <div class="gallery-item">
-            <img src="Layout.png" alt="Design and Implementation of a Small Enterprise Network — Layout screenshot" loading="lazy" width="800" height="600" />
-          </div>
-          </div>
-        </section>
+      <div class="project-header fade-up fade-up-d1">
+        <h1>Design and Implementation of a Small Enterprise Network</h1>
+        <p>A comprehensive Networking II final project that simulates the design and implementation of a small
+          enterprise network for a college environment using VLANs, routing protocols, subnetting, and essential network
+          services.</p>
+        <div class="proj-tags" aria-label="Technologies used">
+          <span class="tag">Networking</span><span class="tag">VLAN</span><span class="tag">OSPF</span><span
+            class="tag">Subnetting</span><span class="tag">Cisco</span><span class="tag">Enterprise Network</span>
+        </div>
       </div>
 
-      <aside class="proj-sidebar" aria-label="Project metadata">
-        <div class="meta-card">
-          <h3>Project Info</h3>
-          <dl>
-            <div class="meta-item">
-              <dt class="label">Type</dt>
-              <dd class="value">Academic Project</dd>
-            </div>
-            <div class="meta-item">
-              <dt class="label">Year</dt>
-              <dd class="value">2026</dd>
-            </div>
-            <div class="meta-item">
-              <dt class="label">Platform</dt>
-              <dd class="value">Network Simulation</dd>
-            </div>
-            <div class="meta-item">
-              <dt class="label">Language</dt>
-              <dd class="value">Cisco IOS</dd>
-            </div>
-            <div class="meta-item">
-              <dt class="label">Database</dt>
-              <dd class="value">N/A</dd>
-            </div>
-            <div class="meta-item">
-              <dt class="label">Status</dt>
-              <dd class="value" style="color:var(--green)">Completed</dd>
-            </div>
-            <div class="meta-item">
-              <dt class="label">Link</dt>
-              <dd class="value"><a href="https://docs.google.com/document/d/10iIFeMoNmaqIWv1NhJsVPBY16KPlqIfk87CCL45uzR8/edit?usp=sharing" target="_blank" rel="noopener noreferrer" style="color:var(--blue)">🔗 View Project</a></dd>
-            </div>
-          </dl>
-        </div>
+      <div class="project-grid fade-up fade-up-d2">
+        <div class="proj-main">
+          <section class="proj-section" aria-labelledby="overview-heading">
+            <h2 id="overview-heading">[OVERVIEW]</h2>
+            <p>This project focuses on designing and implementing a secure and scalable enterprise network for the
+              College of Information and Communications Technology (CICT). The simulated network supports three
+              departments—Administration, Faculty, and Students—each isolated using VLANs while maintaining
+              inter-department communication through routing. The project demonstrates practical applications of network
+              design principles, routing protocols, and basic network security.</p>
+          </section>
 
-        <div class="other-projects">
-          <h3>OTHER PROJECTS</h3>
-          <a href="../Smart_Security_Audit_Report_Vulnerability_Assessment" class="other-card">
-              <img class="other-thumb" src="../Smart_Security_Audit_Report_Vulnerability_Assessment/Dashboard.png" alt="Security Vulnerability Assessment and Reporting project thumbnail" loading="lazy" width="60" height="45" />
+          <section class="proj-section" aria-labelledby="features-heading">
+            <h2 id="features-heading">[KEY FEATURES]</h2>
+            <ul class="bullet-list">
+              <li>Departmental separation using VLANs for Administration, Faculty, and Students</li>
+              <li>Inter-VLAN communication using Router-on-a-Stick configuration</li>
+              <li>Dynamic routing implementation using OSPF across three routers</li>
+              <li>Automatic IP address allocation via centralized DHCP configuration</li>
+              <li>Deployment of DNS and Web services on a dedicated server network</li>
+              <li>Basic network security through port security, device passwords, and controlled access</li>
+            </ul>
+          </section>
+
+          <section class="proj-section" aria-labelledby="technical-heading">
+            <h2 id="technical-heading">[TECHNICAL DETAILS]</h2>
+            <p>The network was implemented using Cisco-based configurations with a focus on real-world enterprise
+              practices. Layer 2 switches handle VLAN segmentation and trunking, while routers manage inter-VLAN routing
+              and dynamic routing using OSPF. Subnetting was applied to efficiently allocate IP address ranges per
+              department. Additional configurations include DHCP services, server setup for DNS and HTTP/HTTPS, port
+              security on switches, and basic router and switch hardening.</p>
+          </section>
+
+          <section aria-labelledby="screenshots-heading">
+            <h2 id="screenshots-heading"
+              style="font-family:var(--mono);font-size:13px;color:var(--blue);letter-spacing:.08em;margin-bottom:12px">
+              [SCREENSHOTS]</h2>
+            <div class="gallery">
+              <div class="gallery-item">
+                <img src="Access_to_Web_Servers.png"
+                  alt="Design and Implementation of a Small Enterprise Network — Access to Web Servers screenshot"
+                  loading="lazy" width="800" height="600" />
+              </div>
+              <div class="gallery-item">
+                <img src="VLAN_Isolation.png"
+                  alt="Design and Implementation of a Small Enterprise Network — VLAN Isolation screenshot"
+                  loading="lazy" width="800" height="600" />
+              </div>
+              <div class="gallery-item">
+                <img src="InterVLAN.png"
+                  alt="Design and Implementation of a Small Enterprise Network — InterVLAN screenshot" loading="lazy"
+                  width="800" height="600" />
+              </div>
+              <div class="gallery-item">
+                <img src="DHCP.png" alt="Design and Implementation of a Small Enterprise Network — DHCP screenshot"
+                  loading="lazy" width="800" height="600" />
+              </div>
+              <div class="gallery-item">
+                <img src="Layout.png" alt="Design and Implementation of a Small Enterprise Network — Layout screenshot"
+                  loading="lazy" width="800" height="600" />
+              </div>
+            </div>
+          </section>
+
+          <div class="other-projects-mobile">
+            <h3>OTHER PROJECTS</h3>
+            <a href="../Smart_Security_Audit_Report_Vulnerability_Assessment" class="other-card">
+              <img class="other-thumb" src="../Smart_Security_Audit_Report_Vulnerability_Assessment/Dashboard.png"
+                alt="Security Vulnerability Assessment and Reporting project thumbnail" loading="lazy" width="60"
+                height="45" />
               <div class="other-info">
                 <h4>Security Vulnerability Assessment and Reporting</h4>
                 <p>Cybersecurity · Vulnerability Assessment · Static Analysis</p>
               </div>
             </a>
-          <a href="../Puni't_Habi_A_Woven_Hope_Of_A_Dying_Art" class="other-card">
-              <img class="other-thumb" src="../Puni't_Habi_A_Woven_Hope_Of_A_Dying_Art/1.png" alt="Puni’t Habi: Woven Hope of a Dying Art project thumbnail" loading="lazy" width="60" height="45" />
+            <a href="../Puni't_Habi_A_Woven_Hope_Of_A_Dying_Art" class="other-card">
+              <img class="other-thumb" src="../Puni't_Habi_A_Woven_Hope_Of_A_Dying_Art/1.png"
+                alt="Puni’t Habi: Woven Hope of a Dying Art project thumbnail" loading="lazy" width="60" height="45" />
               <div class="other-info">
                 <h4>Puni’t Habi: Woven Hope of a Dying Art</h4>
                 <p>Documentary Film · DaVinci Resolve Pro</p>
               </div>
             </a>
-          <a href="../KarmaMaster_Reddit_Marketing_Tool" class="other-card">
-              <img class="other-thumb" src="../KarmaMaster_Reddit_Marketing_Tool/Hero.png" alt="KarmaMaster – Reddit Marketing Tool project thumbnail" loading="lazy" width="60" height="45" />
+            <a href="../KarmaMaster_Reddit_Marketing_Tool" class="other-card">
+              <img class="other-thumb" src="../KarmaMaster_Reddit_Marketing_Tool/Hero.png"
+                alt="KarmaMaster – Reddit Marketing Tool project thumbnail" loading="lazy" width="60" height="45" />
               <div class="other-info">
                 <h4>KarmaMaster – Reddit Marketing Tool</h4>
                 <p>Web Development · HTML · CSS · JavaScript</p>
               </div>
             </a>
-          
+
+          </div>
         </div>
-      </aside>
+
+        <aside class="proj-sidebar" aria-label="Project metadata">
+          <div class="meta-card">
+            <h3>Project Info</h3>
+            <dl>
+              <div class="meta-item">
+                <dt class="label">Type</dt>
+                <dd class="value">Academic Project</dd>
+              </div>
+              <div class="meta-item">
+                <dt class="label">Year</dt>
+                <dd class="value">2026</dd>
+              </div>
+              <div class="meta-item">
+                <dt class="label">Platform</dt>
+                <dd class="value">Network Simulation</dd>
+              </div>
+              <div class="meta-item">
+                <dt class="label">Language</dt>
+                <dd class="value">Cisco IOS</dd>
+              </div>
+              <div class="meta-item">
+                <dt class="label">Database</dt>
+                <dd class="value">N/A</dd>
+              </div>
+              <div class="meta-item">
+                <dt class="label">Status</dt>
+                <dd class="value" style="color:var(--green)">Completed</dd>
+              </div>
+              <div class="meta-item">
+                <dt class="label">Link</dt>
+                <dd class="value"><a
+                    href="https://docs.google.com/document/d/10iIFeMoNmaqIWv1NhJsVPBY16KPlqIfk87CCL45uzR8/edit?usp=sharing"
+                    target="_blank" rel="noopener noreferrer" style="color:var(--blue)">🔗 View Project</a></dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="other-projects">
+            <h3>OTHER PROJECTS</h3>
+            <a href="../Smart_Security_Audit_Report_Vulnerability_Assessment" class="other-card">
+              <img class="other-thumb" src="../Smart_Security_Audit_Report_Vulnerability_Assessment/Dashboard.png"
+                alt="Security Vulnerability Assessment and Reporting project thumbnail" loading="lazy" width="60"
+                height="45" />
+              <div class="other-info">
+                <h4>Security Vulnerability Assessment and Reporting</h4>
+                <p>Cybersecurity · Vulnerability Assessment · Static Analysis</p>
+              </div>
+            </a>
+            <a href="../Puni't_Habi_A_Woven_Hope_Of_A_Dying_Art" class="other-card">
+              <img class="other-thumb" src="../Puni't_Habi_A_Woven_Hope_Of_A_Dying_Art/1.png"
+                alt="Puni’t Habi: Woven Hope of a Dying Art project thumbnail" loading="lazy" width="60" height="45" />
+              <div class="other-info">
+                <h4>Puni’t Habi: Woven Hope of a Dying Art</h4>
+                <p>Documentary Film · DaVinci Resolve Pro</p>
+              </div>
+            </a>
+            <a href="../KarmaMaster_Reddit_Marketing_Tool" class="other-card">
+              <img class="other-thumb" src="../KarmaMaster_Reddit_Marketing_Tool/Hero.png"
+                alt="KarmaMaster – Reddit Marketing Tool project thumbnail" loading="lazy" width="60" height="45" />
+              <div class="other-info">
+                <h4>KarmaMaster – Reddit Marketing Tool</h4>
+                <p>Web Development · HTML · CSS · JavaScript</p>
+              </div>
+            </a>
+
+          </div>
+        </aside>
+      </div>
     </div>
+  </main>
+
+  <footer>
+    <span>© 2026 <span class="blue">Hyden Dwayne Sapasap</span></span>
+    <span>Built with precision and purpose.</span>
+  </footer>
+
+
+  <!-- Screenshot Lightbox Modal -->
+  <div class="img-modal-overlay" id="imgModal" role="dialog" aria-modal="true" aria-label="Screenshot viewer">
+    <button class="img-modal-close" id="imgModalClose" aria-label="Close image">✕</button>
+    <button class="img-modal-prev" id="imgModalPrev" aria-label="Previous image">‹</button>
+    <div class="img-modal-box">
+      <img class="img-modal-img" id="imgModalImg" src="" alt="" />
+      <p class="img-modal-caption" id="imgModalCaption"></p>
+    </div>
+    <button class="img-modal-next" id="imgModalNext" aria-label="Next image">›</button>
   </div>
-</main>
 
-<footer>
-  <span>© 2026 <span class="blue">Hyden Dwayne Sapasap</span></span>
-  <span>Built with precision and purpose.</span>
-</footer>
+  <script>
+    (function () {
+      var galleryImgs = Array.from(document.querySelectorAll('.gallery-item img'));
+      var currentIdx = 0;
 
+      function openModal(idx) {
+        currentIdx = idx;
+        var img = galleryImgs[idx];
+        var modalImg = document.getElementById('imgModalImg');
+        modalImg.src = img.src;
+        modalImg.alt = img.alt;
+        document.getElementById('imgModalCaption').textContent = img.alt;
+        document.getElementById('imgModal').classList.add('open');
+        document.body.style.overflow = 'hidden';
+        updateArrows();
+      }
 
-<!-- Screenshot Lightbox Modal -->
-<div class="img-modal-overlay" id="imgModal" role="dialog" aria-modal="true" aria-label="Screenshot viewer">
-  <button class="img-modal-close" id="imgModalClose" aria-label="Close image">✕</button>
-  <button class="img-modal-prev" id="imgModalPrev" aria-label="Previous image">‹</button>
-  <div class="img-modal-box">
-    <img class="img-modal-img" id="imgModalImg" src="" alt="" />
-    <p class="img-modal-caption" id="imgModalCaption"></p>
-  </div>
-  <button class="img-modal-next" id="imgModalNext" aria-label="Next image">›</button>
-</div>
+      function closeModal() {
+        document.getElementById('imgModal').classList.remove('open');
+        document.body.style.overflow = '';
+      }
 
-<script>
-(function() {
-  var galleryImgs = Array.from(document.querySelectorAll('.gallery-item img'));
-  var currentIdx = 0;
+      function updateArrows() {
+        document.getElementById('imgModalPrev').disabled = currentIdx === 0;
+        document.getElementById('imgModalNext').disabled = currentIdx === galleryImgs.length - 1;
+      }
 
-  function openModal(idx) {
-    currentIdx = idx;
-    var img = galleryImgs[idx];
-    var modalImg = document.getElementById('imgModalImg');
-    modalImg.src = img.src;
-    modalImg.alt = img.alt;
-    document.getElementById('imgModalCaption').textContent = img.alt;
-    document.getElementById('imgModal').classList.add('open');
-    document.body.style.overflow = 'hidden';
-    updateArrows();
-  }
+      function prev() { if (currentIdx > 0) openModal(currentIdx - 1); }
+      function next() { if (currentIdx < galleryImgs.length - 1) openModal(currentIdx + 1); }
 
-  function closeModal() {
-    document.getElementById('imgModal').classList.remove('open');
-    document.body.style.overflow = '';
-  }
+      // Click gallery items to open
+      galleryImgs.forEach(function (img, idx) {
+        img.parentElement.addEventListener('click', function () { openModal(idx); });
+      });
 
-  function updateArrows() {
-    document.getElementById('imgModalPrev').disabled = currentIdx === 0;
-    document.getElementById('imgModalNext').disabled = currentIdx === galleryImgs.length - 1;
-  }
+      // Controls
+      document.getElementById('imgModalClose').addEventListener('click', closeModal);
+      document.getElementById('imgModalPrev').addEventListener('click', prev);
+      document.getElementById('imgModalNext').addEventListener('click', next);
 
-  function prev() { if (currentIdx > 0) openModal(currentIdx - 1); }
-  function next() { if (currentIdx < galleryImgs.length - 1) openModal(currentIdx + 1); }
+      // Click overlay to close
+      document.getElementById('imgModal').addEventListener('click', function (e) {
+        if (e.target === this) closeModal();
+      });
 
-  // Click gallery items to open
-  galleryImgs.forEach(function(img, idx) {
-    img.parentElement.addEventListener('click', function() { openModal(idx); });
-  });
-
-  // Controls
-  document.getElementById('imgModalClose').addEventListener('click', closeModal);
-  document.getElementById('imgModalPrev').addEventListener('click', prev);
-  document.getElementById('imgModalNext').addEventListener('click', next);
-
-  // Click overlay to close
-  document.getElementById('imgModal').addEventListener('click', function(e) {
-    if (e.target === this) closeModal();
-  });
-
-  // Keyboard navigation
-  document.addEventListener('keydown', function(e) {
-    var modal = document.getElementById('imgModal');
-    if (!modal.classList.contains('open')) return;
-    if (e.key === 'Escape') closeModal();
-    if (e.key === 'ArrowLeft') prev();
-    if (e.key === 'ArrowRight') next();
-  });
-})();
-</script>
+      // Keyboard navigation
+      document.addEventListener('keydown', function (e) {
+        var modal = document.getElementById('imgModal');
+        if (!modal.classList.contains('open')) return;
+        if (e.key === 'Escape') closeModal();
+        if (e.key === 'ArrowLeft') prev();
+        if (e.key === 'ArrowRight') next();
+      });
+    })();
+  </script>
 
 </body>
+
 </html>

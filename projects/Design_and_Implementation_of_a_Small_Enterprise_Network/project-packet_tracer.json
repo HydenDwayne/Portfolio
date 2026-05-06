@@ -1,0 +1,52 @@
+{
+  "title": "Design and Implementation of a Small Enterprise Network",
+  "description": "A comprehensive Networking II final project that simulates the design and implementation of a small enterprise network for a college environment using VLANs, routing protocols, subnetting, and essential network services.",
+  "image": "Layout.png",
+  "tags": ["Networking", "VLAN", "OSPF", "Subnetting", "Cisco", "Enterprise Network"],
+  "overview": "This project focuses on designing and implementing a secure and scalable enterprise network for the College of Information and Communications Technology (CICT). The simulated network supports three departments—Administration, Faculty, and Students—each isolated using VLANs while maintaining inter-department communication through routing. The project demonstrates practical applications of network design principles, routing protocols, and basic network security.",
+  "features": [
+    "Departmental separation using VLANs for Administration, Faculty, and Students",
+    "Inter-VLAN communication using Router-on-a-Stick configuration",
+    "Dynamic routing implementation using OSPF across three routers",
+    "Automatic IP address allocation via centralized DHCP configuration",
+    "Deployment of DNS and Web services on a dedicated server network",
+    "Basic network security through port security, device passwords, and controlled access"
+  ],
+  "technical": "The network was implemented using Cisco-based configurations with a focus on real-world enterprise practices. Layer 2 switches handle VLAN segmentation and trunking, while routers manage inter-VLAN routing and dynamic routing using OSPF. Subnetting was applied to efficiently allocate IP address ranges per department. Additional configurations include DHCP services, server setup for DNS and HTTP/HTTPS, port security on switches, and basic router and switch hardening.",
+  "gallery": [
+    "Access_to_Web_Servers.png",
+    "VLAN_Isolation.png",
+    "InterVLAN.png",
+    "DHCP.png",
+    "Layout.png"
+  ],
+  "meta": {
+    "type": "Academic Project",
+    "year": "2026",
+    "platform": "Network Simulation",
+    "language": "Cisco IOS",
+    "database": "N/A",
+    "status": "Completed",
+    "link": "https://docs.google.com/document/d/10iIFeMoNmaqIWv1NhJsVPBY16KPlqIfk87CCL45uzR8/edit?usp=sharing"
+  },
+  "otherProjects": [
+    {
+      "title": "Security Vulnerability Assessment and Reporting",
+      "description": "Cybersecurity · Vulnerability Assessment · Static Analysis",
+      "image": "../Smart_Security_Audit_Report_Vulnerability_Assessment/Dashboard.png",
+      "link": "../Smart_Security_Audit_Report_Vulnerability_Assessment"
+    },
+    {
+      "title": "Puni’t Habi: Woven Hope of a Dying Art",
+      "description": "Documentary Film · DaVinci Resolve Pro",
+      "image": "../Puni't_Habi_A_Woven_Hope_Of_A_Dying_Art/1.png",
+      "link": "../Puni't_Habi_A_Woven_Hope_Of_A_Dying_Art"
+    },
+    {
+      "title": "KarmaMaster – Reddit Marketing Tool",
+      "description": "Web Development · HTML · CSS · JavaScript",
+      "image": "../KarmaMaster_Reddit_Marketing_Tool/Hero.png",
+      "link": "../KarmaMaster_Reddit_Marketing_Tool"
+    }
+  ]
+}

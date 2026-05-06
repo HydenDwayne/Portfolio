@@ -1,0 +1,51 @@
+{
+  "title": "BSIT 2A-G2 Facebook Page Management",
+  "description": "Ongoing management and moderation of the BSIT 2A-G2 Facebook page, serving as a centralized digital space for announcements, coordination, documentation, and community engagement among students.",
+  "image": "image.png",
+  "tags": ["Social Media Management", "Community Management", "Content Moderation", "Academic Coordination"],
+  "overview": "The BSIT 2A-G2 Facebook page is actively managed to support day-to-day communication and coordination within the section. Rather than functioning as a one-time project, the page operates as a living platform where updates, reminders, academic content, and class-related media are consistently posted, organized, and moderated to ensure clarity, relevance, and accessibility for all members.",
+  "features": [
+    "Regular posting of announcements, schedules, and academic reminders",
+    "Content organization to ensure important information remains visible and accessible",
+    "Moderation of posts and comments to maintain professionalism and relevance",
+    "Coordination support for group activities, projects, and class events",
+    "Use of multimedia content to document class milestones and activities",
+    "Administrative role management to ensure continuity and accountability"
+  ],
+  "technical": "The page is managed using Facebook’s administrative and moderation tools, including role assignments, post scheduling, comment moderation, and engagement tracking. Content planning and posting follow basic digital communication best practices to ensure accuracy, timeliness, and consistency while maintaining a respectful and organized online environment for the academic community.",
+  "gallery": [
+    "reel1.png",
+    "reel2.png",
+    "post1.png",
+    "post2.png"
+  ],
+  "meta": {
+    "type": "Ongoing Academic Management",
+    "year": "2024–2026",
+    "platform": "Facebook",
+    "language": "English / Filipino",
+    "database": "N/A",
+    "status": "Active",
+    "link": "https://www.facebook.com/bsit2ag2bulsu"
+  },
+  "otherProjects": [
+    {
+      "title": "Design and Implementation of a Small Enterprise Network",
+      "description": "VLAN · OSPF · Cisco IOS",
+      "image": "../Design_and_Implementation_of_a_Small_Enterprise_Network/Layout.png",
+      "link": "../Design_and_Implementation_of_a_Small_Enterprise_Network"
+    },
+    {
+      "title": "Facebook Page Content Management for Rustic Rentals - Naga",
+      "description": "Social Media Management · Content Scheduling",
+      "image": "../Facebook_Page_Content_Management_Rustic_Rentals_Naga/image.png",
+      "link": "../Facebook_Page_Content_Management_Rustic_Rentals_Naga"
+    },
+    {
+      "title": "KarmaMaster Reddit Marketing Tool",
+      "description": "HTML · CSS · JavaScript",
+      "image": "../KarmaMaster_Reddit_Marketing_Tool/Hero.png",
+      "link": "../KarmaMaster_Reddit_Marketing_Tool"
+    }
+  ]
+}

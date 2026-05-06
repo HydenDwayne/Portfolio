@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< HEAD
 
   <!-- ── SEO ── -->
   <title>BSIT 2A-G2 Facebook Page Management — Hyden Dwayne Sapasap Portfolio</title>
@@ -73,11 +74,15 @@
 
   <!-- ── Favicon ── -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='28'>💻</text></svg>" />
+=======
+  <title>Scholarship Management System — HDS.SYS</title>
+>>>>>>> origin/main
 
   <link rel="stylesheet" href="../../style.css" />
   <script src="../../theme_toggle.js" defer></script>
 
   <style>
+<<<<<<< HEAD
     .page-wrap {
       max-width: 1100px;
       margin: 0 auto;
@@ -255,6 +260,114 @@
 
   </style>
 </head>
+=======
+    /* (UNCHANGED — your original CSS kept exactly) */
+    .page-wrap { max-width: 1100px; margin: 0 auto; padding: 72px 40px 80px; }
+
+    .back-link { display:inline-flex; align-items:center; gap:8px; font-size:13px; color:var(--text3); margin-bottom:36px; transition:.2s; }
+    .back-link:hover { color: var(--blue); }
+
+    .project-hero-img { width:100%; aspect-ratio:16/7; object-fit:cover; border-radius:12px; border:1px solid var(--border); margin-bottom:40px; }
+
+    .project-header { margin-bottom:36px; }
+    .project-header h1 { font-size:32px; font-weight:700; margin-bottom:10px; }
+    .project-header p { font-size:15px; color:var(--text2); max-width:680px; line-height:1.75; }
+
+    .proj-tags { display:flex; flex-wrap:wrap; gap:8px; margin-top:16px; }
+
+    .project-grid { display:grid; grid-template-columns:2fr 1fr; gap:48px; margin-top:40px; }
+
+    .proj-section { margin-bottom:36px; }
+    .proj-section h2 { font-size:13px; font-family:var(--mono); color:var(--blue); letter-spacing:.08em; margin-bottom:14px; }
+    .proj-section p { font-size:14px; color:var(--text2); line-height:1.75; }
+
+    .gallery { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:32px; }
+
+    .gallery-item { border-radius:10px; overflow:hidden; border:1px solid var(--border); aspect-ratio:4/3; }
+
+    .gallery-item img { width:100%; height:100%; object-fit:cover; transition:transform .35s; }
+    .gallery-item:hover img { transform:scale(1.05); }
+
+    .proj-sidebar { position:sticky; top:calc(var(--nav-h) + 24px); }
+
+    .meta-card { background:var(--bg3); border:1px solid var(--border); border-radius:10px; padding:20px; margin-bottom:20px; }
+
+    .meta-card h3 {
+      font-size:11px; font-family:var(--mono); color:var(--text3);
+      letter-spacing:.08em; text-transform:uppercase; margin-bottom:12px;
+    }
+
+    .meta-item { display:flex; justify-content:space-between; font-size:13px; padding:8px 0; border-bottom:1px solid var(--border); }
+    .meta-item:last-child { border-bottom:none; }
+
+    .meta-item .label { color:var(--text3); }
+    .meta-item .value { color:var(--text2); font-weight:500; }
+
+    .other-card {
+      background:var(--bg3); border:1px solid var(--border); border-radius:10px;
+      padding:16px; display:flex; gap:12px; align-items:center;
+      transition:.2s; text-decoration:none; color:inherit; margin-bottom:10px;
+    }
+
+    .other-card:hover { border-color:var(--blue); }
+
+    .other-thumb { width:60px; height:45px; border-radius:6px; object-fit:cover; }
+
+    .other-info h4 { font-size:13px; font-weight:600; margin-bottom:3px; }
+    .other-info p { font-size:11px; color:var(--text3); }
+  </style>
+
+  <script>
+    fetch("project-smm.json")
+      .then(res => res.json())
+      .then(data => {
+
+        document.getElementById("title").textContent = data.title;
+        document.getElementById("description").textContent = data.description;
+
+        document.getElementById("heroImage").src = data.image;
+
+        document.getElementById("tags").innerHTML =
+          data.tags.map(t => `<span class="tag">${t}</span>`).join("");
+
+        document.getElementById("overview").textContent = data.overview;
+
+        document.getElementById("features").innerHTML =
+          data.features.map(f => `<li>${f}</li>`).join("");
+
+        document.getElementById("technical").textContent = data.technical;
+
+        document.getElementById("gallery").innerHTML =
+          data.gallery.map(img => `
+            <div class="gallery-item">
+              <img src="${img}" alt="Screenshot" />
+            </div>
+          `).join("");
+
+        document.getElementById("type").textContent = data.meta.type;
+        document.getElementById("year").textContent = data.meta.year;
+        document.getElementById("platform").textContent = data.meta.platform;
+        document.getElementById("language").textContent = data.meta.language;
+        document.getElementById("database").textContent = data.meta.database;
+        document.getElementById("status").textContent = data.meta.status;
+        document.getElementById("link").href = data.meta.link;
+
+        document.getElementById("otherProjects").innerHTML =
+          data.otherProjects.map(p => `
+            <a href="${p.link}" class="other-card">
+              <img class="other-thumb" src="${p.image}" alt="${p.title}" />
+              <div class="other-info">
+                <h4>${p.title}</h4>
+                <p>${p.description}</p>
+              </div>
+            </a>
+          `).join("");
+      })
+      .catch(err => console.error(err));
+  </script>
+</head>
+
+>>>>>>> origin/main
 <body>
 
 <nav>
@@ -266,6 +379,7 @@
     <li><a href="../../leadership/">Leadership</a></li>
     <li><a href="../../contact/">Contact</a></li>
   </ul>
+<<<<<<< HEAD
   <div class="nav-right">
     <button class="nav-theme" title="Toggle theme" aria-label="Toggle light/dark theme">☾</button>
     <button class="nav-hamburger" title="Open menu" aria-label="Open navigation menu" aria-expanded="false">
@@ -280,10 +394,14 @@
   <a href="../../skills/">Skills</a>
   <a href="../../leadership/">Leadership</a>
   <a href="../../contact/">Contact</a>
+=======
+  <button class="nav-theme">✳</button>
+>>>>>>> origin/main
 </nav>
 
 <main>
   <div class="page-wrap">
+<<<<<<< HEAD
     <a href="../" class="back-link fade-up">← Back to Projects</a>
 
     <img
@@ -402,6 +520,63 @@
           
         </div>
       </aside>
+=======
+    <a href="../" class="back-link">← Back to Projects</a>
+
+    <img id="heroImage" class="project-hero-img" />
+
+    <div class="project-header">
+      <h1 id="title"></h1>
+      <p id="description"></p>
+      <div class="proj-tags" id="tags"></div>
+    </div>
+
+    <div class="project-grid">
+
+      <div>
+        <div class="proj-section">
+          <h2>[OVERVIEW]</h2>
+          <p id="overview"></p>
+        </div>
+
+        <div class="proj-section">
+          <h2>[KEY FEATURES]</h2>
+          <ul class="bullet-list" id="features"></ul>
+        </div>
+
+        <div class="proj-section">
+          <h2>[TECHNICAL DETAILS]</h2>
+          <p id="technical"></p>
+        </div>
+
+        <h2 style="font-family:var(--mono);font-size:13px;color:var(--blue);letter-spacing:.08em">[SCREENSHOTS]</h2>
+        <div class="gallery" id="gallery"></div>
+      </div>
+
+      <aside class="proj-sidebar">
+
+        <div class="meta-card">
+          <h3>Project Info</h3>
+          <div class="meta-item"><span class="label">Type</span><span class="value" id="type"></span></div>
+          <div class="meta-item"><span class="label">Year</span><span class="value" id="year"></span></div>
+          <div class="meta-item"><span class="label">Platform</span><span class="value" id="platform"></span></div>
+          <div class="meta-item"><span class="label">Language</span><span class="value" id="language"></span></div>
+          <div class="meta-item"><span class="label">Database</span><span class="value" id="database"></span></div>
+          <div class="meta-item"><span class="label">Status</span><span class="value" id="status" style="color:var(--green)"></span></div>
+          <div class="meta-item">
+            <span class="label">Link</span>
+            <a href="#" target="_blank" style="color:var(--blue)" class="value" id="link">🔗 </a>
+          </div>
+        </div>
+
+        <div>
+          <p style="font-size:11px;font-family:var(--mono);color:var(--text3);letter-spacing:.08em;margin-bottom:12px">OTHER PROJECTS</p>
+          <div id="otherProjects"></div>
+        </div>
+
+      </aside>
+
+>>>>>>> origin/main
     </div>
   </div>
 </main>
@@ -411,6 +586,7 @@
   <span>Built with precision and purpose.</span>
 </footer>
 
+<<<<<<< HEAD
 
 <!-- Screenshot Lightbox Modal -->
 <div class="img-modal-overlay" id="imgModal" role="dialog" aria-modal="true" aria-label="Screenshot viewer">
@@ -479,5 +655,7 @@
 })();
 </script>
 
+=======
+>>>>>>> origin/main
 </body>
 </html>

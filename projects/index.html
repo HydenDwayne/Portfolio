@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< HEAD
 
   <!-- ── SEO ── -->
   <title>Projects — Hyden Dwayne Sapasap | Web Developer Portfolio</title>
@@ -110,6 +111,25 @@
       grid-template-columns: 1fr;
       gap: 24px;
     }
+=======
+  <title>Projects — HDS.SYS</title>
+  <link rel="stylesheet" href="..\style.css" />
+  <script src="..\theme_toggle.js" defer></script>
+  <script src="load_projects.js"></script>
+  <style>
+    .page-wrap {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 72px 40px 80px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+    }
+
+>>>>>>> origin/main
     .project-card {
       background: var(--bg3);
       border: 1px solid var(--border);
@@ -126,11 +146,32 @@
       transform: translateY(-4px);
       box-shadow: 0 16px 40px rgba(0,0,0,.45);
     }
+<<<<<<< HEAD
     .proj-thumb {
       width: 100%;
       aspect-ratio: 16/9;
       overflow: hidden;
       background: var(--bg4);
+=======
+
+    .project-img {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      display: block;
+      background: var(--bg4);
+    }
+
+    /* AI-generated gradient placeholders */
+    .proj-thumb {
+      width: 100%;
+      aspect-ratio: 16/9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+>>>>>>> origin/main
     }
     .proj-thumb img {
       width: 100%; height: 100%;
@@ -139,6 +180,7 @@
       transition: transform .4s ease;
     }
     .project-card:hover .proj-thumb img { transform: scale(1.04); }
+<<<<<<< HEAD
     .project-body { padding: 20px 24px 24px; }
     .project-title { font-size: 16px; font-weight: 600; margin-bottom: 8px; color: var(--text); line-height: 1.4; }
     .project-desc { font-size: 13px; color: var(--text2); line-height: 1.65; margin-bottom: 14px; }
@@ -147,11 +189,34 @@
     @media (min-width: 640px) {
       .projects-grid { grid-template-columns: repeat(2, 1fr); gap: 28px; }
     }
+=======
+
+    .project-body { padding: 24px; }
+
+    .project-title {
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    .project-desc {
+      font-size: 13px;
+      color: var(--text2);
+      line-height: 1.65;
+      margin-bottom: 16px;
+    }
+
+    .project-bullets { margin-bottom: 18px; }
+
+    .project-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+>>>>>>> origin/main
   </style>
 </head>
 <body>
 
 <nav>
+<<<<<<< HEAD
   <a href="../" class="nav-logo"><span class="blue">HDS</span>.SYS</a>
   <ul class="nav-links">
     <li><a href="../about/">About</a></li>
@@ -174,10 +239,22 @@
   <a href="../skills/">Skills</a>
   <a href="../leadership/">Leadership</a>
   <a href="../contact/">Contact</a>
+=======
+  <a href="..\" class="nav-logo"><span class="blue">HDS</span>.SYS</a>
+  <ul class="nav-links">
+    <li><a href="..\about\">About</a></li>
+    <li><a href="..\projects\">Projects</a></li>
+    <li><a href="..\skills\">Skills</a></li>
+    <li><a href="..\leadership\">Leadership</a></li>
+    <li><a href="..\contact\">Contact</a></li>
+  </ul>
+  <button class="nav-theme" title="Toggle theme">✳</button>
+>>>>>>> origin/main
 </nav>
 
 <main>
   <div class="page-wrap">
+<<<<<<< HEAD
     <p class="section-label fade-up">[01_PROJECTS &amp; EXPERIENCES]</p>
     <div class="projects-grid" aria-label="Project list">
       
@@ -270,6 +347,11 @@
     </div>
   </article>
     </div>
+=======
+    <p class="section-label fade-up">[01_PROJECTS & EXPERIENCES]</p>
+
+    <div class="projects-grid" id="projectsGrid"></div>
+>>>>>>> origin/main
   </div>
 </main>
 
@@ -279,4 +361,8 @@
 </footer>
 
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> origin/main

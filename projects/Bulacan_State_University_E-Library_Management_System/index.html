@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -77,12 +78,25 @@
   <link rel="stylesheet" href="../../style.css" />
   <script src="../../theme_toggle.js" defer></script>
 
+=======
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BulSU E-Library System — HDS.SYS</title>
+  <link rel="stylesheet" href="..\..\style.css" />
+  <script src="..\..\theme_toggle.js" defer></script>
+>>>>>>> origin/main
   <style>
     .page-wrap {
       max-width: 1100px;
       margin: 0 auto;
       padding: 72px 40px 80px;
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
     .back-link {
       display: inline-flex;
       align-items: center;
@@ -92,10 +106,21 @@
       margin-bottom: 36px;
       transition: color .2s;
     }
+<<<<<<< HEAD
     .back-link:hover { color: var(--blue); }
     .project-hero-img {
       width: 100%;
       aspect-ratio: 16 / 9;
+=======
+
+    .back-link:hover {
+      color: var(--blue);
+    }
+
+    .project-hero-img {
+      width: 100%;
+      aspect-ratio: 16/7;
+>>>>>>> origin/main
       object-fit: cover;
       border-radius: 12px;
       border: 1px solid var(--border);
@@ -103,6 +128,7 @@
       background: linear-gradient(135deg, #0f1f3d, #0d1526);
       display: block;
     }
+<<<<<<< HEAD
     .project-header { margin-bottom: 36px; }
     .project-header h1 { font-size: 32px; font-weight: 700; margin-bottom: 10px; }
     .project-header p { font-size: 15px; color: var(--text2); max-width: 680px; line-height: 1.75; }
@@ -483,4 +509,345 @@
 </script>
 
 </body>
+=======
+
+    .project-header {
+      margin-bottom: 36px;
+    }
+
+    .project-header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .project-header p {
+      font-size: 15px;
+      color: var(--text2);
+      max-width: 680px;
+      line-height: 1.75;
+    }
+
+    .proj-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 48px;
+      margin-top: 40px;
+    }
+
+    .proj-section {
+      margin-bottom: 36px;
+    }
+
+    .proj-section h2 {
+      font-size: 13px;
+      font-family: var(--mono);
+      color: var(--blue);
+      letter-spacing: .08em;
+      margin-bottom: 14px;
+    }
+
+    .proj-section p {
+      font-size: 14px;
+      color: var(--text2);
+      line-height: 1.75;
+    }
+
+    /* Image gallery */
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 32px;
+    }
+
+    .gallery-item {
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      aspect-ratio: 4/3;
+      background: var(--bg3);
+      position: relative;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .35s;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    /* Sidebar */
+    .proj-sidebar {
+      position: sticky;
+      top: calc(var(--nav-h) + 24px);
+    }
+
+    .meta-card {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .meta-card h3 {
+      font-size: 11px;
+      font-family: var(--mono);
+      color: var(--text3);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .meta-item {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .meta-item:last-child {
+      border-bottom: none;
+    }
+
+    .meta-item .label {
+      color: var(--text3);
+    }
+
+    .meta-item .value {
+      color: var(--text2);
+      font-weight: 500;
+    }
+
+    /* .other-projects { } */
+    .other-projects h3 {
+      font-size: 11px;
+      font-family: var(--mono);
+      color: var(--text3);
+      letter-spacing: .08em;
+      margin-bottom: 12px;
+    }
+
+    .other-card {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      transition: border-color .2s;
+      text-decoration: none;
+      color: inherit;
+      margin-bottom: 10px;
+    }
+
+    .other-card:hover {
+      border-color: var(--blue);
+    }
+
+    .other-thumb {
+      width: 60px;
+      height: 45px;
+      border-radius: 6px;
+      object-fit: cover;
+      background: var(--bg4);
+      flex-shrink: 0;
+    }
+
+    .other-info h4 {
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
+
+    .other-info p {
+      font-size: 11px;
+      color: var(--text3);
+    }
+  </style>
+
+  <script>
+    fetch("project-bulsu.json")
+      .then(res => res.json())
+      .then(data => {
+
+        // Title + description
+        document.getElementById("title").textContent = data.title;
+        document.getElementById("description").textContent = data.description;
+
+        // Hero image
+        const hero = document.getElementById("heroImage");
+        hero.src = data.image;
+
+        // Tags
+        const tags = document.getElementById("tags");
+        tags.innerHTML = data.tags.map(t => `<span class="tag">${t}</span>`).join("");
+
+        // Overview
+        document.getElementById("overview").textContent = data.overview;
+
+        // Features
+        const features = document.getElementById("features");
+        features.innerHTML = data.features.map(f => `<li>${f}</li>`).join("");
+
+        // Technical
+        document.getElementById("technical").textContent = data.technical;
+
+        // Gallery
+        const gallery = document.getElementById("gallery");
+
+        gallery.innerHTML = data.gallery.map(img => `
+          <div class="gallery-item">
+            <img src="${img}" alt="Project screenshot" />
+          </div>
+        `).join("");
+
+        // Project Info
+        document.getElementById("type").textContent = data.meta.type;
+        document.getElementById("year").textContent = data.meta.year;
+        document.getElementById("platform").textContent = data.meta.platform;
+        document.getElementById("language").textContent = data.meta.language;
+        document.getElementById("database").textContent = data.meta.database;
+        document.getElementById("status").textContent = data.meta.status;
+        document.getElementById("link").href = data.meta.link;
+
+        // Other Projects
+        const other = document.getElementById("otherProjects");
+
+        other.innerHTML = data.otherProjects.map(p => `
+          <a href="${p.link}" class="other-card">
+            <img class="other-thumb" src="${p.image}" alt="${p.title}" />
+            <div class="other-info">
+              <h4>${p.title}</h4>
+              <p>${p.description}</p>
+            </div>
+          </a>
+        `).join("");
+
+      })
+      .catch(err => console.error("Failed to load project:", err));
+  </script>
+
+
+</head>
+
+<body>
+
+  <nav>
+    <a href="..\..\" class="nav-logo"><span class="blue">HDS</span>.SYS</a>
+    <ul class="nav-links">
+      <li><a href="..\..\about\">About</a></li>
+      <li><a href="..\..\projects\">Projects</a></li>
+      <li><a href="..\..\skills\">Skills</a></li>
+      <li><a href="..\..\leadership\">Leadership</a></li>
+      <li><a href="..\..\contact\">Contact</a></li>
+    </ul>
+    <button class="nav-theme" title="Toggle theme">✳</button>
+  </nav>
+
+  <main>
+    <div class="page-wrap">
+      <a href="..\" class="back-link fade-up">← Back to Projects</a>
+
+      <img id="heroImage" class="project-hero-img fade-up" />
+
+      <div class="project-header fade-up fade-up-d1">
+        <h1 id="title"></h1>
+
+        <p id="description"></p>
+
+        <div class="proj-tags" id="tags"></div>
+      </div>
+
+      <div class="project-grid fade-up fade-up-d2">
+        <div class="proj-main">
+          <div class="proj-section">
+            <h2>[OVERVIEW]</h2>
+            <p id="overview"></p>
+          </div>
+
+          <div class="proj-section">
+            <h2>[KEY FEATURES]</h2>
+            <ul class="bullet-list" id="features"></ul>
+          </div>
+
+          <div class="proj-section">
+            <h2>[TECHNICAL DETAILS]</h2>
+            <p id="technical"></p>
+          </div>
+
+          <!-- Gallery -->
+          <h2 class="proj-section" style="margin-bottom:12px"><span
+              style="font-family:var(--mono);font-size:13px;color:var(--blue);letter-spacing:.08em">[SCREENSHOTS]</span>
+          </h2>
+          <div class="gallery" id="gallery"></div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="proj-sidebar">
+          <div class="meta-card">
+          <h3>Project Info</h3>
+          <div class="meta-item">
+            <span class="label">Type</span>
+            <span class="value" id="type"></span>
+          </div>
+          <div class="meta-item">
+            <span class="label">Year</span>
+            <span class="value" id="year"></span>
+          </div>
+          <div class="meta-item">
+            <span class="label">Platform</span>
+            <span class="value" id="platform"></span>
+          </div>
+          <div class="meta-item">
+            <span class="label">Language</span>
+            <span class="value" id="language"></span>
+          </div>
+          <div class="meta-item">
+            <span class="label">Database</span>
+            <span class="value" id="database"></span>
+          </div>
+          <div class="meta-item">
+            <span class="label">Status</span>
+            <span class="value" style="color:var(--green)" id="status"></span>
+          </div>
+          <div class="meta-item">
+            <span class="label">Link</span>
+            <a href="#" target="_blank" style="color:var(--blue)" class="value" id="link">🔗 </a>
+          </div>
+        </div>
+
+
+          <div class="other-projects">
+            <h3>OTHER PROJECTS</h3>
+            <div id="otherProjects"></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <span>© 2026 <span class="blue">Hyden Dwayne Sapasap</span></span>
+    <span>Built with precision and purpose.</span>
+  </footer>
+
+</body>
+
+>>>>>>> origin/main
 </html>

@@ -1,0 +1,56 @@
+{
+  "title": "Scholarship Management System",
+  "description": "An interactive web-based system for managing scholarship applications with separate admin and student portals. Built using PHP, MySQL, and jQuery for dynamic form handling and data management.",
+  "image": "Manage_Applications.png",
+  "tags": [
+    "PHP",
+    "MySQL",
+    "jQuery",
+    "Web Development",
+    "CRUD System"
+  ],
+  "overview": "The Scholarship Management System is a web-based platform designed to streamline the application, evaluation, and approval process of scholarships. It provides separate interfaces for administrators and students, ensuring organized and efficient handling of scholarship data and requirements.",
+  "features": [
+    "Developed using PHP, MySQL, and jQuery for dynamic web functionality",
+    "Admin dashboard with full CRUD operations for scholarship records",
+    "Student portal for submitting and tracking scholarship applications",
+    "Role-based authentication system for secure access control",
+    "Dynamic form validation with real-time feedback using jQuery",
+    "Efficient data management with normalized MySQL database structure"
+  ],
+  "technical": "The system follows a structured web architecture using PHP for backend logic, MySQL for database management, and jQuery for client-side interactivity. The design follows an MVC-inspired pattern, separating logic, presentation, and data layers for maintainability and scalability.",
+  "gallery": [
+    "Dashboard.png",
+    "Student_View.png",
+    "Application_Form.png"
+  ],
+  "meta": {
+    "type": "Academic Project",
+    "year": "2025",
+    "platform": "Web",
+    "language": "PHP",
+    "database": "MySQL",
+    "status": "Completed",
+    "link": "https://github.com/HydenDwayne"
+  },
+  "otherProjects": [
+    {
+      "title": "BulSU E-Library System",
+      "description": "Java Swing · SQL Server",
+      "image": "../Bulacan_State_University_E-Library_Management_System/Dashboard.png",
+      "link": "../Bulacan_State_University_E-Library_Management_System"
+    },
+    {
+      "title": "KarmaMaster – Reddit Marketing Tool",
+      "description": "HTML · CSS · JavaScript",
+      "image": "../KarmaMaster_Reddit_Marketing_Tool/Hero.png",
+      "link": "../KarmaMaster_Reddit_Marketing_Tool"
+    },
+    {
+      "title": "Design and Implementation of a Small Enterprise Network",
+      "description": "VLAN · OSPF · Cisco IOS",
+      "image": "../Design_and_Implementation_of_a_Small_Enterprise_Network/Layout.png",
+      "link": "../Design_and_Implementation_of_a_Small_Enterprise_Network"
+    }
+  ]
+}

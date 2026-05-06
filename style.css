@@ -1,9 +1,17 @@
 /* ============================================================
    HDS.SYS — Portfolio Stylesheet
+<<<<<<< HEAD
+   Mobile-first · Responsive · GitHub Pages compatible
+=======
+>>>>>>> origin/main
    ============================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap');
 
+<<<<<<< HEAD
+/* ── DESIGN TOKENS ── */
+=======
+>>>>>>> origin/main
 :root {
   --bg:        #0d0d0d;
   --bg2:       #111111;
@@ -17,10 +25,19 @@
   --blue:      #4d8ef0;
   --blue-dim:  #2563c4;
   --green:     #4ade80;
+<<<<<<< HEAD
+  --yellow:    #eab308;
+  --mono:      'JetBrains Mono', monospace;
+  --sans:      'Inter', sans-serif;
+  --nav-h:     56px;
+  --page-pad:  20px;
+  --max-w:     1280px;
+=======
   --yellow:     #eab308;
   --mono:      'JetBrains Mono', monospace;
   --sans:      'Inter', sans-serif;
   --nav-h:     56px;
+>>>>>>> origin/main
 }
 
 /* LIGHT MODE */
@@ -29,6 +46,13 @@ html.light {
   --bg2:       #ffffff;
   --bg3:       #f0f0f0;
   --bg4:       #e9e9e9;
+<<<<<<< HEAD
+  --border:    #d0d0d0;
+  --border2:   #bdbdbd;
+  --text:      #111111;
+  --text2:     #444444;
+  --text3:     #777777;
+=======
 
   --border:    #d0d0d0;
   --border2:   #bdbdbd;
@@ -37,15 +61,22 @@ html.light {
   --text2:     #444444;
   --text3:     #777777;
 
+>>>>>>> origin/main
   --blue:      #2563eb;
   --blue-dim:  #1d4ed8;
   --green:     #16a34a;
 }
 
+<<<<<<< HEAD
+/* ── RESET ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+=======
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; }
 
+>>>>>>> origin/main
 body {
   background: var(--bg);
   color: var(--text);
@@ -54,7 +85,10 @@ body {
   line-height: 1.65;
   min-height: 100vh;
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/main
 a { color: inherit; text-decoration: none; }
 img { display: block; max-width: 100%; }
 
@@ -64,13 +98,21 @@ nav {
   top: 0; left: 0; right: 0;
   height: var(--nav-h);
   background: var(--bg);
+<<<<<<< HEAD
+=======
   backdrop-filter: blur(12px);
+>>>>>>> origin/main
   border-bottom: 1px solid var(--border);
   display: flex;
   align-items: center;
   justify-content: space-between;
+<<<<<<< HEAD
+  padding: 0 var(--page-pad);
+  z-index: 9999;
+=======
   padding: 0 40px;
   z-index: 1000;
+>>>>>>> origin/main
 }
 
 .nav-logo {
@@ -78,16 +120,29 @@ nav {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.04em;
+<<<<<<< HEAD
+  flex-shrink: 0;
+}
+.nav-logo .blue { color: var(--blue); }
+
+/* Desktop nav links */
+.nav-links {
+  display: none; /* hidden on mobile, shown via media query */
+=======
 }
 .nav-logo span.blue { color: var(--blue); }
 
 .nav-links {
   display: flex;
+>>>>>>> origin/main
   align-items: center;
   gap: 32px;
   list-style: none;
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/main
 .nav-links a {
   font-size: 13px;
   color: var(--text2);
@@ -96,21 +151,112 @@ nav {
 .nav-links a:hover,
 .nav-links a.active { color: var(--text); }
 
+<<<<<<< HEAD
+/* Right side: theme toggle + hamburger */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+=======
+>>>>>>> origin/main
 .nav-theme {
   background: none;
   border: none;
   color: var(--text2);
   cursor: pointer;
   font-size: 18px;
+<<<<<<< HEAD
+  padding: 4px 6px;
+  transition: color .2s;
+  line-height: 1;
+}
+.nav-theme:hover { color: var(--text); }
+
+/* Hamburger button */
+.nav-hamburger {
+  background: none;
+  border: 1px solid var(--border2);
+  border-radius: 6px;
+  color: var(--text2);
+  cursor: pointer;
+  padding: 5px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: border-color .2s, color .2s;
+}
+.nav-hamburger:hover { border-color: var(--text3); color: var(--text); }
+.nav-hamburger span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 1px;
+  transition: transform .25s, opacity .25s;
+}
+.nav-hamburger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.nav-hamburger.open span:nth-child(2) { opacity: 0; }
+.nav-hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+/* Mobile drawer */
+.nav-drawer {
+  display: none;
+  position: fixed;
+  top: var(--nav-h);
+  left: 0; right: 0;
+  /* Hard-coded fallback colours — CSS variables can fail before paint on some mobile browsers */
+  background-color: #111111;
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 12px 32px rgba(0,0,0,.8);
+  /* Stacking: must sit above everything including animated children */
+  z-index: 9999;
+  isolation: isolate;
+  padding: 16px var(--page-pad) 20px;
+  flex-direction: column;
+  gap: 4px;
+  /* Prevent any transparency bleed */
+  opacity: 1;
+}
+html.light .nav-drawer { background-color: #ffffff; }
+.nav-drawer.open { display: flex; height: auto;}
+.nav-drawer a {
+  font-size: 15px;
+  color: var(--text2);
+  padding: 10px 12px;
+  border-radius: 8px;
+  transition: background .15s, color .15s;
+}
+.nav-drawer a:hover,
+.nav-drawer a.active {
+  background: var(--bg3);
+  color: var(--text);
+}
+
+=======
   padding: 4px;
   transition: color .2s;
 }
 .nav-theme:hover { color: var(--text); }
 
+>>>>>>> origin/main
 /* ── MAIN WRAPPER ── */
 main {
   padding-top: var(--nav-h);
   min-height: 100vh;
+<<<<<<< HEAD
+  /* Contain stacking so animated children don't paint above fixed nav/drawer */
+  isolation: isolate;
+}
+
+/* ── PAGE WRAP (used by sub-pages) ── */
+.page-wrap {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 60px var(--page-pad) 80px;
+=======
+>>>>>>> origin/main
 }
 
 /* ── SECTION LABEL ── */
@@ -142,7 +288,11 @@ main {
   background: var(--bg4);
 }
 
+<<<<<<< HEAD
+/* ── BUTTONS ── */
+=======
 /* ── BUTTON ── */
+>>>>>>> origin/main
 .btn-primary {
   display: inline-flex;
   align-items: center;
@@ -180,16 +330,29 @@ main {
 /* ── FOOTER ── */
 footer {
   border-top: 1px solid var(--border);
+<<<<<<< HEAD
+  padding: 20px var(--page-pad);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+=======
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+>>>>>>> origin/main
   color: var(--text3);
   font-size: 12px;
   font-family: var(--mono);
 }
+<<<<<<< HEAD
+footer .blue { color: var(--blue); }
+=======
 
 footer span.blue { color: var(--blue); }
+>>>>>>> origin/main
 
 /* ── MODAL ── */
 .modal-overlay {
@@ -200,7 +363,11 @@ footer span.blue { color: var(--blue); }
   z-index: 2000;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
+  padding: 16px;
+=======
   padding: 20px;
+>>>>>>> origin/main
 }
 .modal-overlay.open { display: flex; }
 
@@ -215,12 +382,18 @@ footer span.blue { color: var(--blue); }
   position: relative;
   animation: modalIn .2s ease;
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/main
 @keyframes modalIn {
   from { opacity: 0; transform: scale(.96) translateY(12px); }
   to   { opacity: 1; transform: scale(1)  translateY(0); }
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/main
 .modal-close {
   position: absolute;
   top: 14px; right: 16px;
@@ -266,9 +439,33 @@ footer span.blue { color: var(--blue); }
 .fade-up-d7 { animation-delay: .7s; }
 .fade-up-d8 { animation-delay: .8s; }
 .fade-up-d9 { animation-delay: .9s; }
+<<<<<<< HEAD
+=======
 .fade-up-d10 { animation-delay: 10s; }
+>>>>>>> origin/main
 
 /* ── SCROLLBAR ── */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+<<<<<<< HEAD
+
+/* ============================================================
+   RESPONSIVE BREAKPOINTS
+   ============================================================ */
+
+/* Tablet: 640px+ */
+@media (min-width: 640px) {
+  :root { --page-pad: 32px; }
+  footer { flex-direction: row; justify-content: space-between; text-align: left; }
+}
+
+/* Desktop: 900px+ — show full nav, hide hamburger */
+@media (min-width: 900px) {
+  :root { --page-pad: 40px; }
+  .nav-links { display: flex; }
+  .nav-hamburger { display: none; }
+  .nav-drawer { display: none !important; }
+}
+=======
+>>>>>>> origin/main

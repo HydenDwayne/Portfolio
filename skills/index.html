@@ -1,5 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── SEO ── -->
+  <title>Skills &amp; Certifications — Hyden Dwayne Sapasap</title>
+  <meta name="description" content="Technical skills and certifications of Hyden Dwayne Sapasap — HTML, CSS, JavaScript, PHP, MySQL, Java, Python, networking tools, and more." />
+  <link rel="canonical" href="https://hydendwayne.github.io/Portfolio/skills/" />
+  <meta property="og:title"       content="Skills — Hyden Dwayne Sapasap" />
+  <meta property="og:description" content="Frontend, backend, tools, and certifications from Udemy, Cisco, Salesforce SmartBridge, and SWITS." />
+  <meta property="og:url"         content="https://hydendwayne.github.io/Portfolio/skills/" />
+  <meta name="twitter:card"       content="summary" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='28'>💻</text></svg>" />
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../theme_toggle.js" defer></script>
+
+  <style>
+    /* Skills grid — 1 col → 2 col → 3 col */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 36px;
+      margin-top: 8px;
+    }
+    @media (min-width: 560px) { .skills-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 860px) { .skills-grid { grid-template-columns: repeat(3, 1fr); } }
+=======
 
 <head>
   <meta charset="UTF-8" />
@@ -20,6 +49,7 @@
       gap: 48px;
       margin-top: 8px;
     }
+>>>>>>> origin/main
 
     .skill-col h3 {
       font-size: 11px;
@@ -27,6 +57,14 @@
       color: var(--text3);
       letter-spacing: .12em;
       text-transform: uppercase;
+<<<<<<< HEAD
+      margin-bottom: 14px;
+      margin-top: 22px;
+    }
+    .skill-col h3:first-child { margin-top: 0; }
+
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+=======
       margin-bottom: 18px;
     }
 
@@ -36,6 +74,7 @@
       gap: 8px;
     }
 
+>>>>>>> origin/main
     .skill-tag {
       display: inline-block;
       padding: 7px 14px;
@@ -46,6 +85,15 @@
       background: var(--bg3);
       transition: border-color .2s, color .2s;
     }
+<<<<<<< HEAD
+    .skill-tag:hover { border-color: var(--blue); color: var(--text); }
+
+    /* Certifications */
+    .section-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 64px 0 48px;
+=======
 
     .skill-tag:hover {
       border-color: var(--blue);
@@ -57,14 +105,19 @@
       border: none;
       border-top: 1px solid var(--border);
       margin: 64px 0;
+>>>>>>> origin/main
     }
 
     .certs-grid {
       display: flex;
       flex-direction: column;
+<<<<<<< HEAD
+      gap: 12px;
+=======
       align-items: center;
       gap: 12px;
       max-width: 100%;
+>>>>>>> origin/main
     }
 
     .cert-card {
@@ -77,9 +130,14 @@
       gap: 16px;
       cursor: pointer;
       transition: border-color .2s, background .2s, transform .15s;
+<<<<<<< HEAD
+      width: 100%; /* was fixed 740px — now fluid */
+    }
+=======
       width: 740px;
     }
 
+>>>>>>> origin/main
     .cert-card:hover {
       border-color: var(--blue);
       background: var(--bg4);
@@ -87,8 +145,12 @@
     }
 
     .cert-icon {
+<<<<<<< HEAD
+      width: 36px; height: 36px;
+=======
       width: 36px;
       height: 36px;
+>>>>>>> origin/main
       border-radius: 8px;
       background: var(--bg4);
       border: 1px solid var(--border);
@@ -98,12 +160,50 @@
       flex-shrink: 0;
       color: var(--blue);
     }
+<<<<<<< HEAD
+    .cert-info { flex: 1; min-width: 0; }
+=======
 
+>>>>>>> origin/main
     .cert-info h4 {
       font-size: 14px;
       font-weight: 500;
       color: var(--text);
       margin-bottom: 2px;
+<<<<<<< HEAD
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    @media (max-width: 480px) { .cert-info h4 { white-space: normal; } }
+    .cert-info p { font-size: 12px; color: var(--text3); }
+
+    .cert-arrow { margin-left: auto; font-size: 16px; color: var(--text3); transition: color .2s; flex-shrink: 0; }
+    .cert-card:hover .cert-arrow { color: var(--blue); }
+
+    /* Cert modal body */
+    .cert-modal-body {
+      padding: 32px 24px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    @media (min-width: 600px) { .cert-modal-body { padding: 40px; } }
+
+    .cert-modal-body h2 { font-size: 18px; font-weight: 600; text-align: center; }
+    .cert-modal-body p  { font-size: 13px; color: var(--text3); text-align: center; }
+
+    .cert-iframe {
+      width: 100%;
+      max-width: 680px;
+      height: 420px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      display: none;
+    }
+    @media (min-width: 600px) { .cert-iframe { height: 500px; } }
+=======
     }
 
     .cert-info p {
@@ -142,6 +242,7 @@
       color: var(--text3);
       text-align: center;
     }
+>>>>>>> origin/main
 
     .cert-placeholder {
       width: 100%;
@@ -157,6 +258,229 @@
       gap: 12px;
       color: var(--text3);
     }
+<<<<<<< HEAD
+    .cert-placeholder svg { opacity: .3; }
+    .cert-placeholder span { font-size: 13px; font-family: var(--mono); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="../" class="nav-logo"><span class="blue">HDS</span>.SYS</a>
+  <ul class="nav-links">
+    <li><a href="../about/">About</a></li>
+    <li><a href="../projects/">Projects</a></li>
+    <li><a href="../skills/">Skills</a></li>
+    <li><a href="../leadership/">Leadership</a></li>
+    <li><a href="../contact/">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="nav-theme" title="Toggle theme" aria-label="Toggle light/dark theme">☾</button>
+    <button class="nav-hamburger" title="Open menu" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<nav class="nav-drawer" aria-label="Mobile navigation">
+  <a href="../about/">About</a>
+  <a href="../projects/">Projects</a>
+  <a href="../skills/">Skills</a>
+  <a href="../leadership/">Leadership</a>
+  <a href="../contact/">Contact</a>
+</nav>
+
+<main>
+  <div class="page-wrap">
+
+    <!-- Stack -->
+    <p class="section-label fade-up">[02_STACK]</p>
+
+    <div class="skills-grid fade-up fade-up-d1">
+
+      <div class="skill-col">
+        <h3>Frontend</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">jQuery</span>
+          <span class="skill-tag">Responsive Design</span>
+        </div>
+        <h3>Backend</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">PHP</span>
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">SQL Server</span>
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">Python</span>
+        </div>
+      </div>
+
+      <div class="skill-col">
+        <h3>Tools &amp; Platforms</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Google Workspace</span>
+          <span class="skill-tag">Microsoft 365</span>
+          <span class="skill-tag">DaVinci Resolve</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">Meta Business Suite</span>
+          <span class="skill-tag">Canva</span>
+          <span class="skill-tag">Cisco Packet Tracer</span>
+          <span class="skill-tag">Eclipse IDE</span>
+          <span class="skill-tag">Apache NetBeans</span>
+          <span class="skill-tag">Visual Studio Code</span>
+          <span class="skill-tag">XAMPP</span>
+        </div>
+      </div>
+
+      <div class="skill-col">
+        <h3>Other Skills</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Team Leadership</span>
+          <span class="skill-tag">Social Media Management</span>
+          <span class="skill-tag">Video Editing</span>
+          <span class="skill-tag">Data Entry</span>
+          <span class="skill-tag">Communication</span>
+          <span class="skill-tag">Graphic Design</span>
+          <span class="skill-tag">Network Design</span>
+          <span class="skill-tag">Computer System Servicing</span>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="section-divider" />
+
+    <!-- Certifications -->
+    <p class="section-label fade-up">[03_CERTIFICATIONS]</p>
+    <p style="font-size:13px;color:var(--text3);margin-bottom:28px;font-family:var(--mono)">Click a certificate to view</p>
+
+    <div class="certs-grid fade-up fade-up-d1">
+
+      <button class="cert-card" onclick="openCert('HTML and CSS for Beginners','Udemy','html-css')" aria-label="View HTML and CSS certificate">
+        <div class="cert-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9l6 6m0-6l-6 6"/></svg>
+        </div>
+        <div class="cert-info">
+          <h4>HTML and CSS for Beginners</h4>
+          <p>Udemy</p>
+        </div>
+        <span class="cert-arrow" aria-hidden="true">→</span>
+      </button>
+
+      <button class="cert-card" onclick="openCert('Computer Hardware Basics','Cisco Networking Academy','cisco')" aria-label="View Cisco certificate">
+        <div class="cert-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9l6 6m0-6l-6 6"/></svg>
+        </div>
+        <div class="cert-info">
+          <h4>Computer Hardware Basics</h4>
+          <p>Cisco Networking Academy</p>
+        </div>
+        <span class="cert-arrow" aria-hidden="true">→</span>
+      </button>
+
+      <button class="cert-card" onclick="openCert('Salesforce Agentblazer Champion Workshop','SmartBridge','salesforce')" aria-label="View Salesforce certificate">
+        <div class="cert-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9l6 6m0-6l-6 6"/></svg>
+        </div>
+        <div class="cert-info">
+          <h4>Salesforce Agentblazer Champion Workshop</h4>
+          <p>SmartBridge</p>
+        </div>
+        <span class="cert-arrow" aria-hidden="true">→</span>
+      </button>
+
+      <button class="cert-card" onclick="openCert('Smart Funnels &amp; Revenue Growth','SWITS','smart-funnels')" aria-label="View Smart Funnels certificate">
+        <div class="cert-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9l6 6m0-6l-6 6"/></svg>
+        </div>
+        <div class="cert-info">
+          <h4>Smart Funnels &amp; Revenue Growth</h4>
+          <p>Society for the Welfare of Information Technology Students</p>
+        </div>
+        <span class="cert-arrow" aria-hidden="true">→</span>
+      </button>
+
+      <button class="cert-card" onclick="openCert('JavaScript Essentials','SWITS','js-essentials')" aria-label="View JavaScript Essentials certificate">
+        <div class="cert-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9l6 6m0-6l-6 6"/></svg>
+        </div>
+        <div class="cert-info">
+          <h4>JavaScript Essentials</h4>
+          <p>Society for the Welfare of Information Technology Students</p>
+        </div>
+        <span class="cert-arrow" aria-hidden="true">→</span>
+      </button>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <span>© 2026 <span class="blue">Hyden Dwayne Sapasap</span></span>
+  <span>Built with precision and purpose.</span>
+</footer>
+
+<!-- CERT MODAL -->
+<div class="modal-overlay" id="certModal" role="dialog" aria-modal="true" aria-labelledby="certTitle" onclick="closeOnOverlay(event)">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeCert()" aria-label="Close certificate modal">✕</button>
+    <div class="cert-modal-body">
+      <h2 id="certTitle"></h2>
+      <p id="certIssuer"></p>
+      <iframe id="certFrame" class="cert-iframe" title="Certificate PDF" aria-label="Certificate document"></iframe>
+      <div class="cert-placeholder" id="certPlaceholder" aria-hidden="true">
+        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="3" y="3" width="18" height="18" rx="2"/>
+          <path d="M9 12h6M12 9v6"/>
+        </svg>
+        <span>Certificate image goes here</span>
+        <span style="font-size:11px;opacity:.5" id="certFilename"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openCert(title, issuer, key) {
+    document.getElementById('certTitle').textContent = title;
+    document.getElementById('certIssuer').textContent = 'Issued by: ' + issuer;
+    document.getElementById('certFilename').textContent = key + '.pdf';
+
+    var frame = document.getElementById('certFrame');
+    var placeholder = document.getElementById('certPlaceholder');
+
+    frame.src = key + '.pdf';
+    frame.style.display = 'block';
+    placeholder.style.display = 'none';
+
+    document.getElementById('certModal').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeCert() {
+    document.getElementById('certModal').classList.remove('open');
+    document.body.style.overflow = '';
+    var frame = document.getElementById('certFrame');
+    frame.src = '';
+    frame.style.display = 'none';
+    document.getElementById('certPlaceholder').style.display = 'flex';
+  }
+
+  function closeOnOverlay(e) {
+    if (e.target === document.getElementById('certModal')) closeCert();
+  }
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeCert();
+  });
+</script>
+
+</body>
+</html>
+=======
 
     .cert-placeholder svg {
       opacity: .3;
@@ -396,3 +720,4 @@
 </body>
 
 </html>
+>>>>>>> origin/main

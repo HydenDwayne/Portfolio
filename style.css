@@ -25,6 +25,9 @@
   --nav-h:     56px;
   --page-pad:  20px;
   --max-w:     1280px;
+  .invert {
+    filter: invert(100%);
+  }
 }
 
 /* LIGHT MODE */
@@ -41,6 +44,9 @@ html.light {
   --blue:      #2563eb;
   --blue-dim:  #1d4ed8;
   --green:     #16a34a;
+  .invert {
+    filter: none;
+  }
 }
 
 /* ── RESET ── */

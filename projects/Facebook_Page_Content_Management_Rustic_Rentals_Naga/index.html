@@ -81,6 +81,42 @@
 }
   </script>
 
+  <script>
+    fetch("../other-projects.json")
+      .then(response => response.json())
+      .then(data => {
+
+        const desktop = document.getElementById("projects-container-desktop");
+        const mobile = document.getElementById("projects-container-mobile");
+
+        // Fisher-Yates shuffle
+        for (let i = data.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [data[i], data[j]] = [data[j], data[i]];
+        }
+
+        // take only 3 random projects
+        data.slice(0, 3).forEach(project => {
+          const card = document.createElement("a");
+          card.className = "other-card";
+          card.href = project.href;
+
+          card.innerHTML = `
+          <img class="other-thumb" src="${project.image}" alt="${project.alt}" loading="lazy" width="60" height="45" />
+          <div class="other-info">
+            <h4>${project.title}</h4>
+            <p>${project.description}</p>
+          </div>
+        `;
+
+          mobile.appendChild(card);
+          const cardClone = card.cloneNode(true);
+          desktop.appendChild(cardClone);
+        });
+      })
+      .catch(err => console.error("Failed to load JSON:", err));
+  </script>
+
   <!-- ── Favicon ── -->
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='28'>💻</text></svg>" />
@@ -554,36 +590,9 @@
           </section>
 
           <div class="other-projects-mobile">
-            <h3>OTHER PROJECTS</h3>
-            <a href="../Design_and_Implementation_of_a_Small_Enterprise_Network" class="other-card">
-              <img class="other-thumb" src="../Design_and_Implementation_of_a_Small_Enterprise_Network/Layout.png"
-                alt="Design and Implementation of a Small Enterprise Network project thumbnail" loading="lazy"
-                width="60" height="45" />
-              <div class="other-info">
-                <h4>Design and Implementation of a Small Enterprise Network</h4>
-                <p>VLAN · OSPF · Cisco IOS</p>
-              </div>
-            </a>
-            <a href="../Bulacan_State_University_E-Library_Management_System" class="other-card">
-              <img class="other-thumb" src="../Bulacan_State_University_E-Library_Management_System/Dashboard.png"
-                alt="Bulacan State University E-Library System project thumbnail" loading="lazy" width="60"
-                height="45" />
-              <div class="other-info">
-                <h4>Bulacan State University E-Library System</h4>
-                <p>Java Swing · SQL Server</p>
-              </div>
-            </a>
-            <a href="../Facebook_Page_Management_of_College_Section" class="other-card">
-              <img class="other-thumb" src="../Facebook_Page_Management_of_College_Section/image.png"
-                alt="Facebook Page Management of College Section project thumbnail" loading="lazy" width="60"
-                height="45" />
-              <div class="other-info">
-                <h4>Facebook Page Management of College Section</h4>
-                <p>Social Media Management · Content Creation</p>
-              </div>
-            </a>
-
-          </div>
+    <h3>OTHER PROJECTS</h3>
+    <div id="projects-container-desktop"></div>
+</div>
         </div>
 
         <aside class="proj-sidebar" aria-label="Project metadata">
@@ -623,34 +632,9 @@
           </div>
 
           <div class="other-projects">
-            <h3>OTHER PROJECTS</h3>
-            <a href="../Facebook_Page_Management_of_College_Section" class="other-card">
-              <img class="other-thumb" src="../Facebook_Page_Management_of_College_Section/image.png"
-                alt="BSIT 2A-G2 Facebook Page Management project thumbnail" loading="lazy" width="60" height="45" />
-              <div class="other-info">
-                <h4>BSIT 2A-G2 Facebook Page Management</h4>
-                <p>Social Media Management · Community Management</p>
-              </div>
-            </a>
-            <a href="../Puni%27t_Habi_A_Woven_Hope_Of_A_Dying_Art" class="other-card">
-              <img class="other-thumb" src="../Puni%27t_Habi_A_Woven_Hope_Of_A_Dying_Art/1.png"
-                alt="PUNI’T HABI: Woven Hope of a Dying Art project thumbnail" loading="lazy" width="60" height="45" />
-              <div class="other-info">
-                <h4>PUNI’T HABI: Woven Hope of a Dying Art</h4>
-                <p>Documentary Film · Cultural Heritage</p>
-              </div>
-            </a>
-            <a href="../Design_and_Implementation_of_a_Small_Enterprise_Network" class="other-card">
-              <img class="other-thumb" src="../Design_and_Implementation_of_a_Small_Enterprise_Network/Layout.png"
-                alt="Design and Implementation of a Small Enterprise Network project thumbnail" loading="lazy"
-                width="60" height="45" />
-              <div class="other-info">
-                <h4>Design and Implementation of a Small Enterprise Network</h4>
-                <p>Networking · VLAN · OSPF · Cisco IOS</p>
-              </div>
-            </a>
-
-          </div>
+    <h3>OTHER PROJECTS</h3>
+    <div id="projects-container-mobile"></div>
+</div>
         </aside>
       </div>
     </div>

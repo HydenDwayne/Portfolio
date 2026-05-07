@@ -78,6 +78,42 @@
 }
   </script>
 
+  <script>
+    fetch("../other-projects.json")
+      .then(response => response.json())
+      .then(data => {
+
+        const desktop = document.getElementById("projects-container-desktop");
+        const mobile = document.getElementById("projects-container-mobile");
+
+        // Fisher-Yates shuffle
+        for (let i = data.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [data[i], data[j]] = [data[j], data[i]];
+        }
+
+        // take only 3 random projects
+        data.slice(0, 3).forEach(project => {
+          const card = document.createElement("a");
+          card.className = "other-card";
+          card.href = project.href;
+
+          card.innerHTML = `
+          <img class="other-thumb" src="${project.image}" alt="${project.alt}" loading="lazy" width="60" height="45" />
+          <div class="other-info">
+            <h4>${project.title}</h4>
+            <p>${project.description}</p>
+          </div>
+        `;
+
+          mobile.appendChild(card);
+          const cardClone = card.cloneNode(true);
+          desktop.appendChild(cardClone);
+        });
+      })
+      .catch(err => console.error("Failed to load JSON:", err));
+  </script>
+
   <!-- ── Favicon ── -->
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='28'>💻</text></svg>" />
@@ -540,70 +576,39 @@
                   width="800" height="600" />
               </div>
               <div class="gallery-item">
-                <img src="network.png"
-                  alt="KarmaMaster – Reddit Marketing Agency Website — Our Network" loading="lazy"
+                <img src="network.png" alt="KarmaMaster – Reddit Marketing Agency Website — Our Network" loading="lazy"
                   width="800" height="600" />
               </div>
               <div class="gallery-item">
-                <img src="problem.png"
-                  alt="KarmaMaster – Reddit Marketing Agency Website — Your Problems" loading="lazy"
-                  width="800" height="600" />
-              </div>
-              <div class="gallery-item">
-                <img src="solution.png"
-                  alt="KarmaMaster – Reddit Marketing Agency Website — Our Solutions" loading="lazy"
-                  width="800" height="600" />
-              </div>
-              <div class="gallery-item">
-                <img src="why.png" alt="KarmaMaster – Reddit Marketing Agency Website — Why Reddit"
+                <img src="problem.png" alt="KarmaMaster – Reddit Marketing Agency Website — Your Problems"
                   loading="lazy" width="800" height="600" />
               </div>
               <div class="gallery-item">
-                <img src="estimator.png"
-                  alt="KarmaMaster – Reddit Marketing Agency Website — Campaign Estimator" loading="lazy"
+                <img src="solution.png" alt="KarmaMaster – Reddit Marketing Agency Website — Our Solutions"
+                  loading="lazy" width="800" height="600" />
+              </div>
+              <div class="gallery-item">
+                <img src="why.png" alt="KarmaMaster – Reddit Marketing Agency Website — Why Reddit" loading="lazy"
                   width="800" height="600" />
               </div>
               <div class="gallery-item">
-                <img src="services.png"
-                  alt="KarmaMaster – Reddit Marketing Agency Website — Our Services" loading="lazy"
-                  width="800" height="600" />
+                <img src="estimator.png" alt="KarmaMaster – Reddit Marketing Agency Website — Campaign Estimator"
+                  loading="lazy" width="800" height="600" />
               </div>
               <div class="gallery-item">
-                <img src="faqs.png"
-                  alt="KarmaMaster – Reddit Marketing Agency Website — Frequently Asked Questions" loading="lazy"
-                  width="800" height="600" />
+                <img src="services.png" alt="KarmaMaster – Reddit Marketing Agency Website — Our Services"
+                  loading="lazy" width="800" height="600" />
+              </div>
+              <div class="gallery-item">
+                <img src="faqs.png" alt="KarmaMaster – Reddit Marketing Agency Website — Frequently Asked Questions"
+                  loading="lazy" width="800" height="600" />
               </div>
             </div>
           </section>
 
           <div class="other-projects-mobile">
             <h3>OTHER PROJECTS</h3>
-            <a href="../Scholarship_Management_System" class="other-card">
-              <img class="other-thumb" src="../Scholarship_Management_System/Manage_Applications.png"
-                alt="Scholarship Management System project thumbnail" loading="lazy" width="60" height="45" />
-              <div class="other-info">
-                <h4>Scholarship Management System</h4>
-                <p>PHP · MySQL · jQuery</p>
-              </div>
-            </a>
-            <a href="../Bulacan_State_University_E-Library_Management_System" class="other-card">
-              <img class="other-thumb" src="../Bulacan_State_University_E-Library_Management_System/Dashboard.png"
-                alt="BulSU E-Library System project thumbnail" loading="lazy" width="60" height="45" />
-              <div class="other-info">
-                <h4>BulSU E-Library System</h4>
-                <p>Java Swing · SQL Server</p>
-              </div>
-            </a>
-            <a href="../Facebook_Page_Management_of_College_Section" class="other-card">
-              <img class="other-thumb" src="../Facebook_Page_Management_of_College_Section/image.png"
-                alt="Facebook Page Management of College Section project thumbnail" loading="lazy" width="60"
-                height="45" />
-              <div class="other-info">
-                <h4>Facebook Page Management of College Section</h4>
-                <p>Social Media Management · Content Creation</p>
-              </div>
-            </a>
-
+            <div id="projects-container-desktop"></div>
           </div>
         </div>
 
@@ -645,32 +650,7 @@
 
           <div class="other-projects">
             <h3>OTHER PROJECTS</h3>
-            <a href="../Scholarship_Management_System" class="other-card">
-              <img class="other-thumb" src="../Scholarship_Management_System/Manage_Applications.png"
-                alt="Scholarship Management System project thumbnail" loading="lazy" width="60" height="45" />
-              <div class="other-info">
-                <h4>Scholarship Management System</h4>
-                <p>PHP · MySQL · jQuery</p>
-              </div>
-            </a>
-            <a href="../Bulacan_State_University_E-Library_Management_System" class="other-card">
-              <img class="other-thumb" src="../Bulacan_State_University_E-Library_Management_System/Dashboard.png"
-                alt="BulSU E-Library System project thumbnail" loading="lazy" width="60" height="45" />
-              <div class="other-info">
-                <h4>BulSU E-Library System</h4>
-                <p>Java Swing · SQL Server</p>
-              </div>
-            </a>
-            <a href="../Facebook_Page_Management_of_College_Section" class="other-card">
-              <img class="other-thumb" src="../Facebook_Page_Management_of_College_Section/image.png"
-                alt="Facebook Page Management of College Section project thumbnail" loading="lazy" width="60"
-                height="45" />
-              <div class="other-info">
-                <h4>Facebook Page Management of College Section</h4>
-                <p>Social Media Management · Content Creation</p>
-              </div>
-            </a>
-
+            <div id="projects-container-mobile"></div>
           </div>
         </aside>
       </div>

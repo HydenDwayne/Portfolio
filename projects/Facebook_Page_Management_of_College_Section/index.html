@@ -80,6 +80,42 @@
 }
   </script>
 
+  <script>
+    fetch("../other-projects.json")
+      .then(response => response.json())
+      .then(data => {
+
+        const desktop = document.getElementById("projects-container-desktop");
+        const mobile = document.getElementById("projects-container-mobile");
+
+        // Fisher-Yates shuffle
+        for (let i = data.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [data[i], data[j]] = [data[j], data[i]];
+        }
+
+        // take only 3 random projects
+        data.slice(0, 3).forEach(project => {
+          const card = document.createElement("a");
+          card.className = "other-card";
+          card.href = project.href;
+
+          card.innerHTML = `
+          <img class="other-thumb" src="${project.image}" alt="${project.alt}" loading="lazy" width="60" height="45" />
+          <div class="other-info">
+            <h4>${project.title}</h4>
+            <p>${project.description}</p>
+          </div>
+        `;
+
+          mobile.appendChild(card);
+          const cardClone = card.cloneNode(true);
+          desktop.appendChild(cardClone);
+        });
+      })
+      .catch(err => console.error("Failed to load JSON:", err));
+  </script>
+
   <!-- ── Favicon ── -->
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='28'>💻</text></svg>" />
@@ -563,35 +599,9 @@
           </section>
 
           <div class="other-projects-mobile">
-            <h3>OTHER PROJECTS</h3>
-            <a href="../Design_and_Implementation_of_a_Small_Enterprise_Network" class="other-card">
-              <img class="other-thumb" src="../Design_and_Implementation_of_a_Small_Enterprise_Network/Layout.png"
-                alt="Design and Implementation of a Small Enterprise Network project thumbnail" loading="lazy"
-                width="60" height="45" />
-              <div class="other-info">
-                <h4>Design and Implementation of a Small Enterprise Network</h4>
-                <p>VLAN · OSPF · Cisco IOS</p>
-              </div>
-            </a>
-            <a href="../Facebook_Page_Content_Management_Rustic_Rentals_Naga" class="other-card">
-              <img class="other-thumb" src="../Facebook_Page_Content_Management_Rustic_Rentals_Naga/image.png"
-                alt="Facebook Page Content Management for Rustic Rentals - Naga project thumbnail" loading="lazy"
-                width="60" height="45" />
-              <div class="other-info">
-                <h4>Facebook Page Content Management for Rustic Rentals - Naga</h4>
-                <p>Social Media Management · Content Scheduling</p>
-              </div>
-            </a>
-            <a href="../KarmaMaster_Reddit_Marketing_Tool" class="other-card">
-              <img class="other-thumb" src="../KarmaMaster_Reddit_Marketing_Tool/Hero.png"
-                alt="KarmaMaster Reddit Marketing Tool project thumbnail" loading="lazy" width="60" height="45" />
-              <div class="other-info">
-                <h4>KarmaMaster Reddit Marketing Tool</h4>
-                <p>HTML · CSS · JavaScript</p>
-              </div>
-            </a>
-
-          </div>
+    <h3>OTHER PROJECTS</h3>
+    <div id="projects-container-desktop"></div>
+</div>
         </div>
 
         <aside class="proj-sidebar" aria-label="Project metadata">
@@ -631,35 +641,9 @@
           </div>
 
           <div class="other-projects">
-            <h3>OTHER PROJECTS</h3>
-            <a href="../Design_and_Implementation_of_a_Small_Enterprise_Network" class="other-card">
-              <img class="other-thumb" src="../Design_and_Implementation_of_a_Small_Enterprise_Network/Layout.png"
-                alt="Design and Implementation of a Small Enterprise Network project thumbnail" loading="lazy"
-                width="60" height="45" />
-              <div class="other-info">
-                <h4>Design and Implementation of a Small Enterprise Network</h4>
-                <p>VLAN · OSPF · Cisco IOS</p>
-              </div>
-            </a>
-            <a href="../Facebook_Page_Content_Management_Rustic_Rentals_Naga" class="other-card">
-              <img class="other-thumb" src="../Facebook_Page_Content_Management_Rustic_Rentals_Naga/image.png"
-                alt="Facebook Page Content Management for Rustic Rentals - Naga project thumbnail" loading="lazy"
-                width="60" height="45" />
-              <div class="other-info">
-                <h4>Facebook Page Content Management for Rustic Rentals - Naga</h4>
-                <p>Social Media Management · Content Scheduling</p>
-              </div>
-            </a>
-            <a href="../KarmaMaster_Reddit_Marketing_Tool" class="other-card">
-              <img class="other-thumb" src="../KarmaMaster_Reddit_Marketing_Tool/Hero.png"
-                alt="KarmaMaster Reddit Marketing Tool project thumbnail" loading="lazy" width="60" height="45" />
-              <div class="other-info">
-                <h4>KarmaMaster Reddit Marketing Tool</h4>
-                <p>HTML · CSS · JavaScript</p>
-              </div>
-            </a>
-
-          </div>
+    <h3>OTHER PROJECTS</h3>
+    <div id="projects-container-mobile"></div>
+</div>
         </aside>
       </div>
     </div>

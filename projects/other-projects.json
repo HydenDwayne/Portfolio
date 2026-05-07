@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Smart Security Audit Report – Vulnerability Assessment",
+    "description": "Cybersecurity · Vulnerability Assessment · Static Analysis",
+    "href": "../Smart_Security_Audit_Report_Vulnerability_Assessment",
+    "image": "../Smart_Security_Audit_Report_Vulnerability_Assessment/Dashboard.png",
+    "alt": "Security Vulnerability Assessment and Reporting project thumbnail"
+  },
+  {
+    "title": "Puni’t Habi: Woven Hope of a Dying Art",
+    "description": "Documentary Film · DaVinci Resolve Pro",
+    "href": "../Puni't_Habi_A_Woven_Hope_Of_A_Dying_Art",
+    "image": "../Puni't_Habi_A_Woven_Hope_Of_A_Dying_Art/1.png",
+    "alt": "Puni’t Habi: Woven Hope of a Dying Art project thumbnail"
+  },
+  {
+    "title": "KarmaMaster – Reddit Marketing Tool",
+    "description": "Web Development · HTML · CSS · JavaScript",
+    "href": "../KarmaMaster_Reddit_Marketing_Tool",
+    "image": "../KarmaMaster_Reddit_Marketing_Tool/Hero.png",
+    "alt": "KarmaMaster – Reddit Marketing Tool project thumbnail"
+  },
+  {
+    "title": "Design and Implementation of a Small Enterprise Network",
+    "description": "Networking · VLAN · OSPF · Cisco IOS",
+    "href": "../Design_and_Implementation_of_a_Small_Enterprise_Network",
+    "image": "../Design_and_Implementation_of_a_Small_Enterprise_Network/Layout.png",
+    "alt": "Design and Implementation of a Small Enterprise Network project thumbnail"
+  },
+  {
+    "title": "Bulacan State University E-Library System",
+    "description": "Java Swing · SQL Server",
+    "href": "../Bulacan_State_University_E-Library_Management_System",
+    "image": "../Bulacan_State_University_E-Library_Management_System/Dashboard.png",
+    "alt": "Bulacan State University E-Library System project thumbnail"
+  },
+  {
+    "title": "Facebook Page Management of College Section",
+    "description": "Social Media Management · Content Creation",
+    "href": "../Facebook_Page_Management_of_College_Section",
+    "image": "../Facebook_Page_Management_of_College_Section/image.png",
+    "alt": "Facebook Page Management of College Section project thumbnail"
+  },
+  {
+    "title": "Facebook Page Content Management for Rustic Rentals - Naga",
+    "description": "Social Media Management · Content Scheduling",
+    "href": "../Facebook_Page_Content_Management_Rustic_Rentals_Naga",
+    "image": "../Facebook_Page_Content_Management_Rustic_Rentals_Naga/image.png",
+    "alt": "Facebook Page Content Management for Rustic Rentals - Naga project thumbnail"
+  },
+  {
+    "title": "Scholarship Management System",
+    "description": "PHP · MySQL · jQuery",
+    "href": "../Scholarship_Management_System",
+    "image": "../Scholarship_Management_System/Manage_Applications.png",
+    "alt": "Scholarship Management System project thumbnail"
+  }
+]

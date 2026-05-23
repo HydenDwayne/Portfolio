@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hydendwayne.github.io/Portfolio/sitemap.xml
+Sitemap: https://portfolio.hyds.online/sitemap.xml
